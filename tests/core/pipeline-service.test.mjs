@@ -12,6 +12,7 @@ test('shared pipeline deduplicates same bytes/context and preserves representati
   const input = { bytes: matrix, name: 'matrix.json', context: {} };
   assert.equal((await pipeline.importFile(input)).status, 'accepted');
   assert.equal((await pipeline.importFile(input)).status, 'duplicate');
+  assert.equal((await pipeline.importFile({ ...input, context: { subject: 'unused-fallback' } })).status, 'duplicate', 'embedded identity takes precedence over unused fallback context');
   assert.equal(pipeline.examinations.length, 1);
   const session = exportSession(pipeline.snapshot({ portable: true }), { analysis: 'all' });
   const restored = new Pipeline();

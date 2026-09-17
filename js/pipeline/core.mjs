@@ -73,7 +73,7 @@ export class Pipeline {
           const exams = result.examinations || [];
           if (!exams.length) throw new Error('No valid examinations found.');
           const subjects = [...new Set(exams.map(e => e.subject))];
-          const subject = context.subject || (subjects.length === 1 ? subjects[0] : subjects.sort().join('|'));
+          const subject = subjects.length === 1 ? subjects[0] : subjects.sort().join('|');
           const id = 'src-' + hash(`${sha256}\n${subject}`).slice(0, 32);
           if (this.sources.some(s => s.id === id)) Object.assign(outcome, { status: 'duplicate', sourceId: id });
           else {
