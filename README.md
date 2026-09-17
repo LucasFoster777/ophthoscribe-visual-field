@@ -1,6 +1,6 @@
 # OphthoScribe Visual Field
 
-An independent, local demonstration of Zeiss PDF extraction and two separate visual field display paths. Sources were selectively copied from OphthoScribe revision `478e764144fe2261b53fb477ede094a2ad4bb494`. This repository has fresh history and no remote; it does not require the original checkout.
+An independent, local demonstration of Zeiss PDF extraction and two separate visual field display paths. Sources were selectively copied from OphthoScribe revision `478e764144fe2261b53fb477ede094a2ad4bb494`. This repository has its own history and is maintained independently; it does not require the original checkout.
 
 ## Run
 
