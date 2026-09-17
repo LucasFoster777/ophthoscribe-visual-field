@@ -1,0 +1,10 @@
+{
+  "schema": "visual-field-protocol-index/v1",
+  "entries": [
+    {
+      "id": "zeiss_multi",
+      "version": 1,
+      "file": "zeiss_multi.v1.json"
+    }
+  ]
+}

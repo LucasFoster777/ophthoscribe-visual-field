@@ -1,0 +1,19 @@
+{
+  "name": "ophthoscribe-visual-field",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local Zeiss extraction and visual field analysis demonstration",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "test:extraction": "node --test tests/core/visual-field-protocols-zeiss-multi.test.js",
+    "test:analysis": "node --test tests/core/visual-field-analysis.test.js tests/core/visual-field-normative-dataset.test.js tests/core/visual-field-grayscale-worker.test.js",
+    "test:display": "node --test tests/core/visual-field-door.test.js tests/core/standalone-isolation.test.js"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "1.0.8",
+    "pdfjs-dist": "6.2.108"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "visual-field-states/v1",
+  "absence": ["not-extracted", "not-present-in-source"],
+  "parse": ["unparsed", "parsed", "partial", "failed"],
+  "review": ["awaiting-review", "reviewed"],
+  "point": ["read", "absent", "not-extracted"],
+  "readers": ["text-layer", "raster-glyph"],
+  "eyes": ["OD", "OS"],
+  "analysisOrigins": ["printed", "computed"],
+  "vocabularies": {
+    "sex": [
+      { "id": "female", "label": "Female", "short": "F", "aliases": ["female"], "curation": "seed" },
+      { "id": "male", "label": "Male", "short": "M", "aliases": ["male"], "curation": "seed" },
+      { "id": "other", "label": "Other", "short": "O", "aliases": ["other"], "curation": "seed" }
+    ],
+    "ght": [
+      { "id": "within-normal-limits", "label": "Within Normal Limits", "short": "WNL", "aliases": ["within normal limits", "within normal"], "curation": "seed" },
+      { "id": "borderline", "label": "Borderline", "short": "Borderline", "aliases": ["borderline"], "curation": "seed" },
+      { "id": "outside-normal-limits", "label": "Outside Normal Limits", "short": "ONL", "aliases": ["outside normal limits", "outside normal"], "curation": "seed" },
+      { "id": "general-reduction", "label": "General Reduction of Sensitivity", "short": "Gen reduction", "aliases": ["general reduction of sensitivity", "general reduction"], "curation": "seed" },
+      { "id": "abnormally-high-sensitivity", "label": "Abnormally High Sensitivity", "short": "Abn high", "aliases": ["abnormally high sensitivity", "abnormally high"], "curation": "seed" }
+    ],
+    "probability": [
+      { "id": "normal", "label": "Not significant", "short": "", "aliases": ["normal"], "glyphInkMax": 0.035, "curation": "seed" },
+      { "id": "p<5%", "label": "p < 5%", "short": "p<5%", "aliases": ["p<5%", "p < 5%"], "glyphInkMax": 0.16, "curation": "seed" },
+      { "id": "p<2%", "label": "p < 2%", "short": "p<2%", "aliases": ["p<2%", "p < 2%"], "glyphInkMax": 0.37, "curation": "seed" },
+      { "id": "p<1%", "label": "p < 1%", "short": "p<1%", "aliases": ["p<1%", "p < 1%"], "glyphInkMax": 0.63, "curation": "seed" },
+      { "id": "p<0.5%", "label": "p < 0.5%", "short": "p<0.5%", "aliases": ["p<0.5%", "p < 0.5%"], "glyphInkMax": 1, "curation": "seed" },
+      { "id": "p<10%", "label": "p < 10%", "short": "p<10%", "aliases": ["p<10%", "p < 10%"], "curation": "seed" }
+    ]
+  }
+}

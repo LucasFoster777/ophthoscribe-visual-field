@@ -1,0 +1,15 @@
+{
+  "schema": "visual-field-fixation/v1",
+  "monitors": [
+    { "id": "gaze-blind-spot", "label": "Gaze / Blind Spot", "short": "Gaze/BS", "aliases": ["gaze/blind spot", "gaze/blind", "gaze blind spot"], "curation": "seed" },
+    { "id": "blind-spot", "label": "Blind Spot", "short": "BS", "aliases": ["blind spot"], "curation": "seed" },
+    { "id": "gaze", "label": "Gaze", "short": "Gaze", "aliases": ["gaze"], "curation": "seed" },
+    { "id": "off", "label": "Off", "short": "Off", "aliases": ["off"], "curation": "seed" }
+  ],
+  "targets": [
+    { "id": "central", "label": "Central", "short": "Central", "aliases": ["central"], "curation": "seed" },
+    { "id": "small-diamond", "label": "Small Diamond", "short": "Sm diamond", "aliases": ["small diamond"], "curation": "seed" },
+    { "id": "large-diamond", "label": "Large Diamond", "short": "Lg diamond", "aliases": ["large diamond"], "curation": "seed" },
+    { "id": "bottom-led", "label": "Bottom LED", "short": "Bottom LED", "aliases": ["bottom led"], "curation": "seed" }
+  ]
+}

@@ -1,0 +1,375 @@
+@layer surfaces {
+.investigation-rich-viewer-host { min-width:0; min-height:0; overflow:hidden; }
+}
+@layer surfaces {
+.vf-report-surface { position:relative; width:100%; height:100%; min-width:0; min-height:0; box-sizing:border-box; display:block; overflow:auto; padding:16px; border:1px solid var(--border); border-radius:10px; background:var(--surface, #fff); box-shadow:none; }
+}
+@layer surfaces {
+.vf-report-surface[hidden] { display:none; }
+}
+@layer surfaces {
+.vf-report-surface.vf-report-empty { display:block; }
+}
+@layer surfaces {
+.vf-report-empty-state { min-height:140px; height:100%; box-sizing:border-box; display:grid; place-content:center; justify-items:center; gap:8px; padding:24px; color:var(--text-muted); text-align:center; }
+}
+@layer surfaces {
+.vf-report-empty-state p { margin:0; }
+}
+@layer surfaces {
+.vf-report-launcher { border:1px solid var(--border); border-radius:999px; padding:5px 10px; background:var(--surface-soft, #f7f8f6); color:var(--text); cursor:pointer; }
+}
+@media (max-width: 1100px) { @layer surfaces {
+.vf-report-surface { padding:12px; }
+} }
+@media (max-width: 760px) { @layer surfaces {
+.vf-report-surface { height:auto; overflow:visible; }
+} }
+@layer surfaces {
+.vf-sheet { display:grid; gap:14px; }
+/* Master–detail (2026-08-29): the compact series column left, open paper right. */
+.vf-sheet--split { grid-template-columns:minmax(300px, 400px) minmax(0, 1fr); gap:24px; align-items:start; }
+.vf-sheet__nav { min-width:0; display:grid; gap:12px; align-content:start; }
+.vf-sheet__detail { min-width:0; }
+.vf-report-and-trend { display:grid; grid-template-columns:minmax(520px,560px) minmax(280px,1fr); gap:24px; align-items:start; }
+.vf-sheet h2 { margin:0; font-size:12px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--text-muted); }
+.vf-sheet__current { display:grid; gap:10px; }
+.vf-sheet__empty { margin:0; color:var(--text-muted); }
+/* The deposit card wears the dashboard card grammar (.os-surface-card / .os-card-masthead /
+ * .os-card-table--dense); this block only adds the compact interior the narrow column needs. */
+.vf-deposit { padding:10px 12px 4px; }
+.vf-deposit__head { margin:0 0 6px; cursor:default; }
+summary.vf-deposit__head { cursor:pointer; list-style:none; }
+summary.vf-deposit__head::-webkit-details-marker { display:none; }
+summary.vf-deposit__head::before { content:'▸'; color:var(--text-muted); font-size:11px; }
+details[open] > summary.vf-deposit__head::before { content:'▾'; }
+.vf-deposit__title { margin:0 auto 0 0; min-width:0; font-family:var(--display,'Newsreader',Georgia,serif); font-size:15px; font-weight:600; letter-spacing:-0.01em; line-height:1.2; }
+.vf-deposit__note { margin:0 0 8px; color:var(--text-muted); font-size:12.5px; }
+.vf-deposit__table { font-variant-numeric:tabular-nums; }
+.vf-deposit__table th { padding:0 6px 6px; font-size:9.5px; }
+.vf-deposit__table td { padding:5px 6px; font-size:12px; }
+.vf-cell-pattern { font-size:11px; }
+tr.vf-test-row { cursor:pointer; }
+tr.vf-test-row[aria-current="true"] td { background:var(--green-soft, #edf7f1); }
+tr.vf-test-row[aria-current="true"] td:first-child { box-shadow:inset 2px 0 0 var(--green, #256d4b); }
+tr.vf-test-row[data-review-state="awaiting-review"] .vf-cell-date::after { content:'●'; margin-left:5px; font-size:6px; vertical-align:middle; color:var(--dc-accent, #536c94); }
+.vf-row-door { border:0; padding:0; background:none; font:inherit; color:inherit; cursor:pointer; }
+.vf-sheet__previous > summary { cursor:pointer; font-size:12px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--text-muted); padding:4px 0; }
+.vf-sheet__previous > .vf-deposit { margin-top:10px; }
+.vf-sheet__toolbar { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.vf-sheet__groupby { display:flex; align-items:center; gap:8px; font-size:12px; color:var(--text-muted); }
+.vf-sheet__groupby select { font:inherit; border:1px solid var(--border); border-radius:6px; padding:2px 6px; background:var(--surface, #fff); color:var(--text); }
+.vf-sheet__group { display:grid; gap:10px; }
+.vf-sheet__group > h2 { margin:0; }
+}
+@media (max-width: 1100px) { @layer surfaces {
+.vf-sheet--split { grid-template-columns:minmax(0,1fr); }
+} }
+@media (max-width: 1450px) { @layer surfaces {
+.vf-report-and-trend { grid-template-columns:minmax(0,1fr); }
+} }
+@layer surfaces {
+.vf-report-main { min-width:0; }
+}
+@layer surfaces {
+.vf-report-header { display:flex; flex-wrap:wrap; align-items:center; gap:6px 10px; margin-bottom:10px; }
+}
+@layer surfaces {
+.vf-report-header h3 { margin:0 auto 0 0; font-size:17px; }
+}
+
+/* Tabless workspace (2026-08-29): every representation at once, whitespace-separated — no panel boxes, no tabs. */
+@layer surfaces {
+.vf-eye-panels { display:grid; grid-template-columns:repeat(auto-fit,minmax(440px,1fr)); gap:18px 34px; align-items:start; }
+}
+@layer surfaces {
+.vf-eye-panel { min-width:0; }
+}
+@layer surfaces {
+.vf-eye-maps { display:grid; grid-template-columns:repeat(2,max-content); gap:14px 18px; align-items:start; }
+}
+@layer surfaces {
+.vf-map-block { min-width:0; }
+}
+@layer surfaces {
+.vf-map-label { margin:0 0 4px; font-size:10.5px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--text-muted); }
+}
+@layer surfaces {
+/* The stored grayscale reads at the numeric maps' scale, so the four blocks sit as one printout rather than one
+ * large plate beside three small ones. */
+.vf-map-block img { display:block; width:258px; max-width:258px; margin:0; image-rendering:pixelated; }
+}
+@layer surfaces {
+.vf-eye-panel-head { display:flex; align-items:center; justify-content:space-between; gap:8px; margin:0 0 8px; }
+}
+@layer surfaces {
+.vf-eye-panel-head h4 { margin:0; }
+}
+@layer surfaces {
+.vf-map { position:relative; display:grid; grid-template-columns:repeat(10,24px); grid-auto-rows:24px; gap:2px; width:max-content; align-items:center; font-family:var(--font-mono, monospace); font-size:10.5px; }
+}
+@layer surfaces {
+.vf-point { position:relative; z-index:1; display:grid; place-items:center; width:24px; height:24px; border:0; border-radius:50%; background:transparent; color:var(--text); text-align:center; }
+}
+@layer surfaces {
+.vf-artifact-contours { position:absolute; inset:0; z-index:0; overflow:visible; pointer-events:none; }
+}
+@layer surfaces {
+.vf-point-selectable { cursor:pointer; }
+}
+@layer surfaces {
+.vf-point-selectable:hover:not([data-artifact-id]):not([data-draft-artifact-id]) { background:var(--surface-soft, #f7f8f6); }
+}
+@layer surfaces {
+.vf-point-selectable:focus-visible { outline:2px solid var(--green, #256d4b); outline-offset:2px; }
+}
+@layer surfaces {
+.vf-point-selectable[data-draft-artifact-id]:focus-visible { outline-color:var(--vf-artifact); }
+}
+@layer surfaces {
+.vf-point[data-p]::before, .vf-significance-tier::before { content:''; position:absolute; width:18px; height:18px; box-sizing:border-box; border-radius:50%; color:var(--text, #1c1f1d); pointer-events:none; }
+}
+@layer surfaces {
+.vf-point[data-p="5"]::before, .vf-significance-tier[data-p="5"]::before { border:1px solid currentColor; }
+}
+@layer surfaces {
+.vf-point[data-p="2"]::before, .vf-significance-tier[data-p="2"]::before { border:1px solid currentColor; background:color-mix(in srgb,currentColor 6%,transparent); }
+}
+@layer surfaces {
+.vf-point[data-p="1"]::before, .vf-significance-tier[data-p="1"]::before { border:2px solid currentColor; background:color-mix(in srgb,currentColor 11%,transparent); }
+}
+@layer surfaces {
+.vf-point[data-p="0.5"]::before, .vf-significance-tier[data-p="0.5"]::before { border:2px solid currentColor; background:color-mix(in srgb,currentColor 18%,transparent); }
+}
+@layer surfaces {
+.vf-significance-legend { align-self:end; max-width:258px; font-size:11px; color:var(--text-muted); }
+.vf-significance-legend p, .vf-map-source-note, .vf-map-warning { margin:0; }
+.vf-significance-tiers { display:flex; flex-wrap:wrap; gap:6px 12px; margin-top:7px; }
+.vf-significance-tier { position:relative; display:inline-flex; align-items:center; min-height:18px; padding-left:23px; color:var(--text); }
+.vf-significance-tier::before { left:0; top:0; }
+.vf-map-source-note, .vf-map-warning { grid-column:1 / -1; max-width:534px; font-size:11.5px; color:var(--text-muted); }
+.vf-map-warning { color:var(--danger, #9a302a); }
+}
+/* The indices line (unified workspace §5): one quiet inline strip per eye, dot-separated — no item boxes. */
+@layer surfaces {
+.vf-summary { display:flex; flex-wrap:wrap; align-items:baseline; gap:2px 0; margin:12px 0 0; font-size:11.5px; }
+}
+@layer surfaces {
+.vf-summary-item { display:inline-flex; align-items:baseline; gap:4px; }
+}
+@layer surfaces {
+.vf-summary-item + .vf-summary-item::before { content:'·'; margin:0 7px; color:var(--text-muted); }
+}
+@layer surfaces {
+.vf-summary-item.corrected > span { text-decoration:underline; text-decoration-color:var(--green, #256d4b); text-decoration-thickness:2px; text-underline-offset:2px; }
+}
+@layer surfaces {
+.vf-inline-edit { justify-self:start; border:0; padding:0; background:none; color:var(--green, #256d4b); font-size:10px; cursor:pointer; }
+}
+@layer surfaces {
+.vf-eye-panel textarea { width:100%; min-height:58px; box-sizing:border-box; margin-top:10px; border:1px solid var(--border); border-radius:8px; padding:7px; resize:vertical; }
+}
+@layer surfaces {
+.vf-artifact-form { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-top:10px; padding:10px; border:1px solid var(--border); border-radius:8px; }
+}
+/* display:flex above would defeat the hidden attribute — the artifact form
+   must stay invisible until Add Artifact arms it (startArtifact). */
+@layer surfaces {
+.vf-artifact-form[hidden] { display:none; }
+}
+@layer surfaces {
+.vf-artifact-announcer { min-height:18px; margin:0 0 4px; color:var(--text-muted); font-size:12px; }
+}
+@layer surfaces {
+.vf-review-scope-note { margin-top:10px; font-size:12px; font-style:italic; color:var(--ink-mute,var(--text-muted,#7a6d5c)); }
+}
+@layer surfaces {
+.vf-artifact-legend { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+}
+@layer surfaces {
+.vf-artifact-legend > * { border:0; border-left:4px solid var(--vf-artifact); background:none; padding:3px 6px; font-style:italic; }
+}
+@layer surfaces {
+.vf-artifact-legend button { cursor:pointer; }
+}
+@layer surfaces {
+.vf-original-only { padding:12px; border-radius:8px; background:#fff1ef; color:var(--danger, #9a302a); }
+}
+@layer surfaces {
+.vf-original-backdrop { position:fixed; inset:0; z-index:1400; display:grid; grid-template-rows:1fr auto; gap:8px; padding:18px; background:rgb(20 24 22 / 72%); }
+}
+@layer surfaces {
+.vf-original-backdrop .vf-original-pages { width:100%; height:100%; box-sizing:border-box; overflow:auto; border-radius:8px; background:white; padding:12px; }
+}
+@layer surfaces {
+.vf-original-pages canvas { display:block; width:min(100%, 980px); height:auto; margin:0 auto 12px; box-shadow:0 0 0 1px var(--border, #ddd); }
+}
+@layer surfaces {
+.vf-original-backdrop button { justify-self:center; padding:8px 14px; }
+}
+@layer surfaces {
+.vf-correction-backdrop { position:fixed; inset:0; z-index:1450; display:grid; place-items:center; padding:18px; background:rgb(20 24 22 / 58%); }
+}
+@layer surfaces {
+.vf-correction-dialog { width:min(420px,100%); display:grid; gap:10px; padding:18px; border:1px solid var(--border); border-radius:12px; background:var(--surface, #fff); box-shadow:0 18px 55px rgb(20 24 22 / 24%); }
+}
+@layer surfaces {
+.vf-correction-dialog h3, .vf-correction-dialog p { margin:0; }
+}
+@layer surfaces {
+.vf-correction-dialog label { display:grid; gap:4px; font-size:12px; font-weight:600; }
+}
+@layer surfaces {
+.vf-correction-dialog input { min-height:36px; box-sizing:border-box; border:1px solid var(--border); border-radius:7px; padding:6px 8px; font:inherit; }
+}
+@layer surfaces {
+.vf-correction-error { min-height:18px; color:var(--danger, #9a302a); font-size:12px; }
+}
+@layer surfaces {
+.os-note-preview [data-fragment-role="vf-title"] { font-weight:700; text-decoration:underline; }
+}
+@layer surfaces {
+.os-note-preview [data-fragment-role="vf-eye-label"] { font-weight:700; }
+}
+@layer surfaces {
+.os-note-preview [data-fragment-role="vf-artifact"] { font-style:italic; }
+}
+@media (max-width: 760px) {
+  @layer surfaces {
+.investigation-rich-viewer-host { overflow:visible; }
+}
+  @layer surfaces {
+.vf-eye-panels { grid-template-columns:minmax(0,1fr); }
+}
+  @layer surfaces {
+.vf-eye-maps { grid-template-columns:repeat(2,max-content); overflow-x:auto; }
+}
+}
+@layer surfaces {
+.vf-source-scroll { overflow:auto; background:var(--surface, #fff); border-radius:8px; padding:12px 16px; }
+}
+@layer surfaces {
+.vf-source-table h4 { margin:12px 0 4px; }
+}
+@layer surfaces {
+.vf-source-grid { width:auto; border-collapse:collapse; margin:6px 0 14px; font-variant-numeric:tabular-nums; font-size:12px; }
+}
+@layer surfaces {
+.vf-source-grid caption { caption-side:top; text-align:left; font:600 12px/1.4 inherit; font-family:inherit; font-style:normal; color:var(--text); padding-bottom:4px; }
+}
+@layer surfaces {
+.vf-source-grid td { width:28px; height:22px; text-align:center; border:1px solid var(--border); }
+}
+@layer surfaces {
+.vf-source-grid td.vf-source-blank { border:0; }
+}
+@layer surfaces {
+.vf-source-provenance, .vf-source-reliability { margin:4px 0; font-size:12px; color:var(--text-muted); }
+}
+/* P2 (2026-08-27): "View source data" = the stored record beside the original with the OCR region overlay. */
+@layer surfaces {
+.vf-record-overlay { display:grid; grid-template-columns:minmax(300px,2fr) minmax(0,3fr); gap:10px; height:100%; min-height:0; }
+}
+@layer surfaces {
+.vf-record-overlay > .vf-source-scroll, .vf-record-overlay > .vf-original-pages { min-height:0; height:100%; box-sizing:border-box; overflow:auto; }
+}
+@layer surfaces {
+.vf-record-table { border-collapse:collapse; margin:6px 0 10px; font-size:12px; }
+}
+@layer surfaces {
+.vf-record-table td { padding:2px 8px; border-bottom:1px solid var(--border); vertical-align:top; }
+}
+@layer surfaces {
+.vf-record-table td:first-child { color:var(--text-muted); white-space:nowrap; }
+}
+@layer surfaces {
+.vf-record-absent { color:var(--text-muted); font-style:italic; }
+}
+@layer surfaces {
+.vf-region-page { position:relative; width:min(100%, 980px); margin:0 auto 12px; }
+}
+@layer surfaces {
+.vf-region-page canvas { display:block; width:100%; height:auto; margin:0; }
+}
+@layer surfaces {
+.vf-region { position:absolute; box-sizing:border-box; border:1px solid rgb(37 109 75 / 75%); background:rgb(37 109 75 / 8%); }
+}
+@layer surfaces {
+.vf-region:hover { z-index:1; border-color:rgb(180 74 58); background:rgb(180 74 58 / 22%); }
+}
+/* Doors are inline clickable text, the app's grammar — never pills. */
+@layer surfaces {
+.vf-door { margin-left:8px; border:0; padding:0; background:none; color:var(--green, #256d4b); font-size:12px; font-weight:600; cursor:pointer; white-space:nowrap; }
+.vf-door:hover { text-decoration:underline; }
+}
+@layer surfaces {
+.vf-door-marker { font-size:12px; color:var(--text-muted); }
+}
+@layer surfaces {
+.vf-origin-computed { color:var(--vf-computed, #1f3a5f); }
+}
+@layer surfaces {
+.vf-origin-printed { color:var(--text); }
+}
+@layer surfaces {
+.vf-summary-secondary { color:var(--text-muted); font-size:10px; }
+}
+@layer surfaces {
+.vf-report-attributes { margin-bottom:10px; font-size:12px; }
+}
+@layer surfaces {
+.vf-report-attributes > summary { cursor:pointer; color:var(--text-muted); }
+}
+@layer surfaces {
+.vf-legend { display:flex; flex-wrap:wrap; gap:14px; margin-top:10px; font-size:11px; color:var(--text-muted); }
+}
+@layer surfaces {
+.vf-legend-swatch { display:inline-block; width:10px; height:10px; margin-right:4px; border-radius:2px; vertical-align:middle; background:currentColor; }
+}
+
+/* The trend panel (doctor pass 2026-08-28, S5): per-eye MD over time under a deposit; values keep their provenance ink. */
+@layer surfaces {
+.vf-trend { display:grid; gap:8px; padding:8px 0 4px; }
+}
+@layer surfaces {
+.vf-trend--detail { min-width:0; }
+}
+@layer surfaces {
+.vf-trend h4 { margin:0; font-size:12px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--text-muted); }
+}
+@layer surfaces {
+.vf-trend__chart { width:100%; max-width:560px; height:auto; display:block; }
+}
+@layer surfaces {
+.vf-trend__grid { stroke:var(--border, #d9d9d9); stroke-width:1; }
+}
+@layer surfaces {
+.vf-trend__zero { stroke:var(--text-muted, #666); stroke-width:1; stroke-dasharray:2 3; }
+}
+@layer surfaces {
+.vf-trend__axis { font-size:10px; fill:var(--text-muted, #666); }
+}
+@layer surfaces {
+.vf-trend__none { font-size:12px; fill:var(--text-muted, #666); }
+}
+@layer surfaces {
+.vf-trend__line { fill:none; stroke:currentColor; stroke-width:1.5; }
+}
+@layer surfaces {
+.vf-trend__line--OS { stroke-dasharray:4 3; }
+}
+@layer surfaces {
+.vf-trend__dot { fill:currentColor; }
+}
+@layer surfaces {
+.vf-trend__table { border-collapse:collapse; font-size:12px; }
+}
+@layer surfaces {
+.vf-trend__table th, .vf-trend__table td { text-align:left; padding:2px 10px 2px 0; border-bottom:1px solid var(--border, #eee); }
+}
+@layer surfaces {
+.vf-trend__absent { color:var(--text-muted, #666); }
+}
+@layer surfaces {
+.vf-trend__legend, .vf-trend__loading, .vf-trend__single { margin:0; font-size:11px; color:var(--text-muted, #666); }
+}

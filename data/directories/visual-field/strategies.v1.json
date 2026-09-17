@@ -1,0 +1,11 @@
+{
+  "schema": "visual-field-strategies/v1",
+  "entries": [
+    { "id": "sita_faster", "label": "SITA Faster", "short": "SITA Faster", "aliases": ["sita faster", "sita-faster"], "legacy": "SITA_FASTER", "curation": "seed", "codes": [] },
+    { "id": "sita_fast", "label": "SITA Fast", "short": "SITA Fast", "aliases": ["sita fast", "sita-fast"], "legacy": "SITA_FAST", "curation": "seed", "codes": [] },
+    { "id": "sita_standard", "label": "SITA Standard", "short": "SITA Std", "aliases": ["sita standard", "sita-standard"], "legacy": "SITA_STANDARD", "curation": "seed", "codes": [] },
+    { "id": "sita_swap", "label": "SITA SWAP", "short": "SITA SWAP", "aliases": ["sita swap", "sita-swap"], "legacy": "SITA_SWAP", "curation": "seed", "codes": [] },
+    { "id": "full_threshold", "label": "Full Threshold", "short": "Full", "aliases": ["full threshold", "full-threshold"], "legacy": "FULL_THRESHOLD", "curation": "seed", "codes": [] },
+    { "id": "fastpac", "label": "FASTPAC", "short": "FASTPAC", "aliases": ["fastpac"], "legacy": "FASTPAC", "curation": "seed", "codes": [] }
+  ]
+}

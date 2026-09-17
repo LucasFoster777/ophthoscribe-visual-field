@@ -1,0 +1,11 @@
+{
+  "schema": "visual-field-formats/v1",
+  "entries": [
+    { "id": "pdf-printout", "lane": "clinic", "label": "PDF printout", "short": "PDF", "aliases": ["application/pdf"], "readerFamily": "text-layer", "mime": ["application/pdf"], "curation": "seed" },
+    { "id": "hfa-xml", "lane": "clinic", "label": "HFA XML", "short": "XML", "aliases": ["hfa-xml", "text/xml", "application/xml"], "readerFamily": "structured", "mime": ["application/xml", "text/xml"], "curation": "seed" },
+    { "id": "dicom-opv", "lane": "clinic", "label": "DICOM OPV", "short": "OPV", "aliases": ["dicom-opv", "application/dicom"], "readerFamily": "structured", "mime": ["application/dicom"], "curation": "seed" },
+    { "id": "e2e", "lane": "clinic", "label": "Heidelberg E2E", "short": "E2E", "aliases": ["e2e"], "readerFamily": "structured", "mime": ["application/octet-stream"], "curation": "seed" },
+    { "id": "threshold-json", "lane": "development", "label": "Threshold JSON", "short": "JSON", "aliases": ["threshold-json", "forum-json", "application/json"], "readerFamily": "structured", "mime": ["application/json"], "curation": "seed" },
+    { "id": "tds-csv", "lane": "development", "label": "Threshold CSV", "short": "CSV", "aliases": ["tds-csv", "text/csv"], "readerFamily": "structured", "mime": ["text/csv"], "curation": "seed" }
+  ]
+}

@@ -1,0 +1,1050 @@
+{
+  "schema": "ophthoscribe.visual-field-dataset.v1",
+  "id": "ophthoscribe-24-2-normative-lf",
+  "version": "1.0.0",
+  "pattern": "24-2",
+  "label": "OphthoScribe 24-2 normative (calibrated, operator-accepted 2026-08-16)",
+  "provenance": {
+    "id": "ophthoscribe-24-2-normative-lf",
+    "version": "1.0.0",
+    "source": "normative_24_2.json: 54-location 24-2 table calibrated by Lucas Foster from the SUNY-IU normative dataset (visualFields R package); central locations from the 10-2 surface, periphery from 24-2",
+    "sourceSha256": "bbc4bbb8be2fc45c98b92d64ee3298435c66cf52ea451d37f0ef0b0ede385c52",
+    "mode": "operator-accepted",
+    "acceptedBy": "Lucas Foster",
+    "acceptedOn": "2026-08-16",
+    "redistributionRights": "derived-from-suny-iu-visualfields-gpl3-unverified",
+    "clinicalValidation": "not-validated",
+    "productionEnabled": true
+  },
+  "coordinateBasis": "degrees-od-normalized",
+  "blindSpot": {
+    "OD": [
+      "p25",
+      "p34"
+    ],
+    "OS": [
+      "p19",
+      "p28"
+    ]
+  },
+  "points": [
+    {
+      "id": "p00",
+      "xOd": -9,
+      "y": 21,
+      "ageIntercept": 30.2207,
+      "slope": -0.06487,
+      "sdTd": 3.0646,
+      "sdPd": 2.4014,
+      "tdCutoffs": [
+        -9.08,
+        -9.08,
+        -5.44
+      ],
+      "pdCutoffs": [
+        -9.58,
+        -9.33,
+        -5.81
+      ]
+    },
+    {
+      "id": "p01",
+      "xOd": -3,
+      "y": 21,
+      "ageIntercept": 30.4919,
+      "slope": -0.060511,
+      "sdTd": 2.9732,
+      "sdPd": 2.3225,
+      "tdCutoffs": [
+        -8.65,
+        -8.57,
+        -6.43
+      ],
+      "pdCutoffs": [
+        -8.61,
+        -7.92,
+        -7.44
+      ]
+    },
+    {
+      "id": "p02",
+      "xOd": 3,
+      "y": 21,
+      "ageIntercept": 30.6034,
+      "slope": -0.061547,
+      "sdTd": 3.0068,
+      "sdPd": 2.3607,
+      "tdCutoffs": [
+        -9.8,
+        -9.74,
+        -6.61
+      ],
+      "pdCutoffs": [
+        -9.89,
+        -9.73,
+        -6.87
+      ]
+    },
+    {
+      "id": "p03",
+      "xOd": 9,
+      "y": 21,
+      "ageIntercept": 30.5551,
+      "slope": -0.067977,
+      "sdTd": 3.1655,
+      "sdPd": 2.5159,
+      "tdCutoffs": [
+        -11.34,
+        -10.52,
+        -6.77
+      ],
+      "pdCutoffs": [
+        -11.27,
+        -11.04,
+        -7.57
+      ]
+    },
+    {
+      "id": "p04",
+      "xOd": -15,
+      "y": 15,
+      "ageIntercept": 31.8139,
+      "slope": -0.065273,
+      "sdTd": 2.5433,
+      "sdPd": 1.9909,
+      "tdCutoffs": [
+        -6.58,
+        -6.27,
+        -3.21
+      ],
+      "pdCutoffs": [
+        -5.89,
+        -5.89,
+        -4.87
+      ]
+    },
+    {
+      "id": "p05",
+      "xOd": -9,
+      "y": 15,
+      "ageIntercept": 32.2447,
+      "slope": -0.055505,
+      "sdTd": 2.3268,
+      "sdPd": 1.7951,
+      "tdCutoffs": [
+        -4.72,
+        -4.42,
+        -2.49
+      ],
+      "pdCutoffs": [
+        -5.39,
+        -4.8,
+        -3.76
+      ]
+    },
+    {
+      "id": "p06",
+      "xOd": -3,
+      "y": 15,
+      "ageIntercept": 32.516,
+      "slope": -0.051146,
+      "sdTd": 2.2353,
+      "sdPd": 1.7163,
+      "tdCutoffs": [
+        -6.17,
+        -5.72,
+        -4.13
+      ],
+      "pdCutoffs": [
+        -6.3,
+        -6.3,
+        -4.68
+      ]
+    },
+    {
+      "id": "p07",
+      "xOd": 3,
+      "y": 15,
+      "ageIntercept": 32.6274,
+      "slope": -0.052182,
+      "sdTd": 2.269,
+      "sdPd": 1.7544,
+      "tdCutoffs": [
+        -9.41,
+        -8.69,
+        -5.06
+      ],
+      "pdCutoffs": [
+        -9.34,
+        -8.86,
+        -5.29
+      ]
+    },
+    {
+      "id": "p08",
+      "xOd": 9,
+      "y": 15,
+      "ageIntercept": 32.5794,
+      "slope": -0.058627,
+      "sdTd": 2.4277,
+      "sdPd": 1.9096,
+      "tdCutoffs": [
+        -4.96,
+        -4.77,
+        -3.3
+      ],
+      "pdCutoffs": [
+        -7.6,
+        -6.66,
+        -4.16
+      ]
+    },
+    {
+      "id": "p09",
+      "xOd": 15,
+      "y": 15,
+      "ageIntercept": 32.3713,
+      "slope": -0.070451,
+      "sdTd": 2.7115,
+      "sdPd": 2.1818,
+      "tdCutoffs": [
+        -5.73,
+        -5.73,
+        -4.4
+      ],
+      "pdCutoffs": [
+        -6.85,
+        -5.99,
+        -5.01
+      ]
+    },
+    {
+      "id": "p10",
+      "xOd": -21,
+      "y": 9,
+      "ageIntercept": 32.7317,
+      "slope": -0.074652,
+      "sdTd": 2.3687,
+      "sdPd": 1.8866,
+      "tdCutoffs": [
+        -7.62,
+        -7.13,
+        -4.77
+      ],
+      "pdCutoffs": [
+        -7.09,
+        -7.09,
+        -5
+      ]
+    },
+    {
+      "id": "p11",
+      "xOd": -15,
+      "y": 9,
+      "ageIntercept": 33.3222,
+      "slope": -0.05949,
+      "sdTd": 2.0271,
+      "sdPd": 1.5737,
+      "tdCutoffs": [
+        -3.47,
+        -3.43,
+        -2.16
+      ],
+      "pdCutoffs": [
+        -4.26,
+        -3.97,
+        -3.31
+      ]
+    },
+    {
+      "id": "p12",
+      "xOd": -9,
+      "y": 9,
+      "ageIntercept": 33.8438,
+      "slope": -0.045169,
+      "sdTd": 1.4002,
+      "sdPd": 1.2117,
+      "tdCutoffs": [
+        -2.82,
+        -2.67,
+        -1.73
+      ],
+      "pdCutoffs": [
+        -3.63,
+        -3.58,
+        -2.95
+      ]
+    },
+    {
+      "id": "p13",
+      "xOd": -3,
+      "y": 9,
+      "ageIntercept": 33.3682,
+      "slope": -0.049485,
+      "sdTd": 1.4202,
+      "sdPd": 1.2674,
+      "tdCutoffs": [
+        -2.95,
+        -2.78,
+        -1.73
+      ],
+      "pdCutoffs": [
+        -3.81,
+        -3.73,
+        -3.03
+      ]
+    },
+    {
+      "id": "p14",
+      "xOd": 3,
+      "y": 9,
+      "ageIntercept": 33.5706,
+      "slope": -0.053944,
+      "sdTd": 1.4415,
+      "sdPd": 1.2935,
+      "tdCutoffs": [
+        -3.85,
+        -3.68,
+        -2.69
+      ],
+      "pdCutoffs": [
+        -4.52,
+        -4.4,
+        -3.66
+      ]
+    },
+    {
+      "id": "p15",
+      "xOd": 9,
+      "y": 9,
+      "ageIntercept": 34.3074,
+      "slope": -0.057109,
+      "sdTd": 1.4631,
+      "sdPd": 1.2928,
+      "tdCutoffs": [
+        -3.5,
+        -3.37,
+        -2.49
+      ],
+      "pdCutoffs": [
+        -4.48,
+        -4.29,
+        -3.24
+      ]
+    },
+    {
+      "id": "p16",
+      "xOd": 15,
+      "y": 9,
+      "ageIntercept": 33.8799,
+      "slope": -0.064683,
+      "sdTd": 2.1952,
+      "sdPd": 1.7645,
+      "tdCutoffs": [
+        -5.69,
+        -4.55,
+        -3.62
+      ],
+      "pdCutoffs": [
+        -6.48,
+        -6.21,
+        -4.71
+      ]
+    },
+    {
+      "id": "p17",
+      "xOd": 21,
+      "y": 9,
+      "ageIntercept": 33.5123,
+      "slope": -0.081916,
+      "sdTd": 2.6041,
+      "sdPd": 2.1537,
+      "tdCutoffs": [
+        -5.2,
+        -4.2,
+        -3.41
+      ],
+      "pdCutoffs": [
+        -5.79,
+        -5.63,
+        -4.27
+      ]
+    },
+    {
+      "id": "p18",
+      "xOd": -27,
+      "y": 3,
+      "ageIntercept": 32.974,
+      "slope": -0.093007,
+      "sdTd": 2.5408,
+      "sdPd": 2.0882,
+      "tdCutoffs": [
+        -7.65,
+        -6.42,
+        -5
+      ],
+      "pdCutoffs": [
+        -9.04,
+        -7.84,
+        -6.37
+      ]
+    },
+    {
+      "id": "p19",
+      "xOd": -21,
+      "y": 3,
+      "ageIntercept": 33.7244,
+      "slope": -0.072451,
+      "sdTd": 2.0741,
+      "sdPd": 1.6584,
+      "tdCutoffs": [
+        -4.95,
+        -4.95,
+        -3.09
+      ],
+      "pdCutoffs": [
+        -5.72,
+        -5.39,
+        -4.23
+      ]
+    },
+    {
+      "id": "p20",
+      "xOd": -15,
+      "y": 3,
+      "ageIntercept": 34.315,
+      "slope": -0.057289,
+      "sdTd": 1.7325,
+      "sdPd": 1.3455,
+      "tdCutoffs": [
+        -4.35,
+        -3.44,
+        -2.54
+      ],
+      "pdCutoffs": [
+        -6.12,
+        -5.35,
+        -3.9
+      ]
+    },
+    {
+      "id": "p21",
+      "xOd": -9,
+      "y": 3,
+      "ageIntercept": 34.1154,
+      "slope": -0.041717,
+      "sdTd": 1.4008,
+      "sdPd": 1.1922,
+      "tdCutoffs": [
+        -3.53,
+        -3.31,
+        -1.99
+      ],
+      "pdCutoffs": [
+        -4.17,
+        -4.02,
+        -3.25
+      ]
+    },
+    {
+      "id": "p22",
+      "xOd": -3,
+      "y": 3,
+      "ageIntercept": 35.2033,
+      "slope": -0.043414,
+      "sdTd": 1.3239,
+      "sdPd": 1.0459,
+      "tdCutoffs": [
+        -1.97,
+        -1.89,
+        -1.5
+      ],
+      "pdCutoffs": [
+        -2.54,
+        -2.5,
+        -2.1
+      ]
+    },
+    {
+      "id": "p23",
+      "xOd": 3,
+      "y": 3,
+      "ageIntercept": 35.4682,
+      "slope": -0.050262,
+      "sdTd": 1.3597,
+      "sdPd": 1.092,
+      "tdCutoffs": [
+        -2.32,
+        -2.02,
+        -1.36
+      ],
+      "pdCutoffs": [
+        -3.08,
+        -2.89,
+        -2.34
+      ]
+    },
+    {
+      "id": "p24",
+      "xOd": 9,
+      "y": 3,
+      "ageIntercept": 34.7608,
+      "slope": -0.058404,
+      "sdTd": 1.4879,
+      "sdPd": 1.3045,
+      "tdCutoffs": [
+        -3.46,
+        -3.25,
+        -2.31
+      ],
+      "pdCutoffs": [
+        -4.95,
+        -4.66,
+        -3.21
+      ]
+    },
+    {
+      "id": "p25",
+      "xOd": 15,
+      "y": 3,
+      "ageIntercept": 34.4534,
+      "slope": -0.0677,
+      "sdTd": 1.9959,
+      "sdPd": 1.6635,
+      "tdCutoffs": [
+        -4.95,
+        -4.51,
+        -3.21
+      ],
+      "pdCutoffs": [
+        -6.51,
+        -5.79,
+        -4.2
+      ]
+    },
+    {
+      "id": "p26",
+      "xOd": 21,
+      "y": 3,
+      "ageIntercept": 34.505,
+      "slope": -0.079715,
+      "sdTd": 2.3095,
+      "sdPd": 1.9255,
+      "tdCutoffs": [
+        -5.45,
+        -5.4,
+        -3.55
+      ],
+      "pdCutoffs": [
+        -7.91,
+        -6.13,
+        -4.44
+      ]
+    },
+    {
+      "id": "p27",
+      "xOd": -27,
+      "y": -3,
+      "ageIntercept": 33.451,
+      "slope": -0.094388,
+      "sdTd": 2.4678,
+      "sdPd": 2.0491,
+      "tdCutoffs": [
+        -8.81,
+        -8.18,
+        -5.31
+      ],
+      "pdCutoffs": [
+        -10.44,
+        -10.12,
+        -6.42
+      ]
+    },
+    {
+      "id": "p28",
+      "xOd": -21,
+      "y": -3,
+      "ageIntercept": 34.2014,
+      "slope": -0.073832,
+      "sdTd": 2.0011,
+      "sdPd": 1.6193,
+      "tdCutoffs": [
+        -4.17,
+        -4.06,
+        -2.85
+      ],
+      "pdCutoffs": [
+        -5.6,
+        -5.14,
+        -4.15
+      ]
+    },
+    {
+      "id": "p29",
+      "xOd": -15,
+      "y": -3,
+      "ageIntercept": 34.7919,
+      "slope": -0.05867,
+      "sdTd": 1.6595,
+      "sdPd": 1.3064,
+      "tdCutoffs": [
+        -3.13,
+        -2.98,
+        -1.81
+      ],
+      "pdCutoffs": [
+        -4.13,
+        -3.9,
+        -3.36
+      ]
+    },
+    {
+      "id": "p30",
+      "xOd": -9,
+      "y": -3,
+      "ageIntercept": 34.1024,
+      "slope": -0.038265,
+      "sdTd": 1.3941,
+      "sdPd": 1.1735,
+      "tdCutoffs": [
+        -3.18,
+        -3.02,
+        -2.27
+      ],
+      "pdCutoffs": [
+        -3.95,
+        -3.8,
+        -3.12
+      ]
+    },
+    {
+      "id": "p31",
+      "xOd": -3,
+      "y": -3,
+      "ageIntercept": 35.1549,
+      "slope": -0.038509,
+      "sdTd": 1.3143,
+      "sdPd": 1.0203,
+      "tdCutoffs": [
+        -2.71,
+        -2.44,
+        -1.76
+      ],
+      "pdCutoffs": [
+        -2.68,
+        -2.63,
+        -2.44
+      ]
+    },
+    {
+      "id": "p32",
+      "xOd": 3,
+      "y": -3,
+      "ageIntercept": 35.4196,
+      "slope": -0.045356,
+      "sdTd": 1.35,
+      "sdPd": 1.0664,
+      "tdCutoffs": [
+        -2.26,
+        -2.11,
+        -1.66
+      ],
+      "pdCutoffs": [
+        -3.99,
+        -3.42,
+        -2.1
+      ]
+    },
+    {
+      "id": "p33",
+      "xOd": 9,
+      "y": -3,
+      "ageIntercept": 34.7579,
+      "slope": -0.055239,
+      "sdTd": 1.4824,
+      "sdPd": 1.2873,
+      "tdCutoffs": [
+        -3.04,
+        -2.92,
+        -2.18
+      ],
+      "pdCutoffs": [
+        -4.61,
+        -4.39,
+        -3.17
+      ]
+    },
+    {
+      "id": "p34",
+      "xOd": 15,
+      "y": -3,
+      "ageIntercept": null,
+      "slope": null,
+      "sdTd": null,
+      "sdPd": null,
+      "tdCutoffs": null,
+      "pdCutoffs": null
+    },
+    {
+      "id": "p35",
+      "xOd": 21,
+      "y": -3,
+      "ageIntercept": 34.982,
+      "slope": -0.081096,
+      "sdTd": 2.2366,
+      "sdPd": 1.8864,
+      "tdCutoffs": [
+        -7.76,
+        -6.71,
+        -4.25
+      ],
+      "pdCutoffs": [
+        -8.49,
+        -6.15,
+        -5.13
+      ]
+    },
+    {
+      "id": "p36",
+      "xOd": -21,
+      "y": -9,
+      "ageIntercept": 34.1626,
+      "slope": -0.078795,
+      "sdTd": 2.1498,
+      "sdPd": 1.7692,
+      "tdCutoffs": [
+        -7.62,
+        -6.46,
+        -4.97
+      ],
+      "pdCutoffs": [
+        -8.24,
+        -6.96,
+        -5.44
+      ]
+    },
+    {
+      "id": "p37",
+      "xOd": -15,
+      "y": -9,
+      "ageIntercept": 34.7532,
+      "slope": -0.063633,
+      "sdTd": 1.8082,
+      "sdPd": 1.4563,
+      "tdCutoffs": [
+        -3.35,
+        -2.84,
+        -1.88
+      ],
+      "pdCutoffs": [
+        -4.37,
+        -4.22,
+        -3.35
+      ]
+    },
+    {
+      "id": "p38",
+      "xOd": -9,
+      "y": -9,
+      "ageIntercept": 33.7584,
+      "slope": -0.036538,
+      "sdTd": 1.3832,
+      "sdPd": 1.1666,
+      "tdCutoffs": [
+        -3.27,
+        -3,
+        -1.96
+      ],
+      "pdCutoffs": [
+        -3.7,
+        -3.55,
+        -2.92
+      ]
+    },
+    {
+      "id": "p39",
+      "xOd": -3,
+      "y": -9,
+      "ageIntercept": 33.2939,
+      "slope": -0.037258,
+      "sdTd": 1.3936,
+      "sdPd": 1.1985,
+      "tdCutoffs": [
+        -2.9,
+        -2.71,
+        -2.07
+      ],
+      "pdCutoffs": [
+        -3.6,
+        -3.53,
+        -2.94
+      ]
+    },
+    {
+      "id": "p40",
+      "xOd": 3,
+      "y": -9,
+      "ageIntercept": 33.4895,
+      "slope": -0.042292,
+      "sdTd": 1.4202,
+      "sdPd": 1.2327,
+      "tdCutoffs": [
+        -2.95,
+        -2.72,
+        -2.18
+      ],
+      "pdCutoffs": [
+        -4.2,
+        -4.05,
+        -3.18
+      ]
+    },
+    {
+      "id": "p41",
+      "xOd": 9,
+      "y": -9,
+      "ageIntercept": 34.222,
+      "slope": -0.048478,
+      "sdTd": 1.4461,
+      "sdPd": 1.2477,
+      "tdCutoffs": [
+        -3.18,
+        -2.97,
+        -2.19
+      ],
+      "pdCutoffs": [
+        -4.46,
+        -4.27,
+        -3.44
+      ]
+    },
+    {
+      "id": "p42",
+      "xOd": 15,
+      "y": -9,
+      "ageIntercept": 35.3109,
+      "slope": -0.068826,
+      "sdTd": 1.9764,
+      "sdPd": 1.6471,
+      "tdCutoffs": [
+        -5.89,
+        -5.8,
+        -3.77
+      ],
+      "pdCutoffs": [
+        -7.28,
+        -7.28,
+        -5.17
+      ]
+    },
+    {
+      "id": "p43",
+      "xOd": 21,
+      "y": -9,
+      "ageIntercept": 34.9433,
+      "slope": -0.086059,
+      "sdTd": 2.3852,
+      "sdPd": 2.0363,
+      "tdCutoffs": [
+        -5.99,
+        -4.77,
+        -3.58
+      ],
+      "pdCutoffs": [
+        -6.77,
+        -6.37,
+        -4.8
+      ]
+    },
+    {
+      "id": "p44",
+      "xOd": -15,
+      "y": -15,
+      "ageIntercept": 34.1989,
+      "slope": -0.072177,
+      "sdTd": 2.1785,
+      "sdPd": 1.7953,
+      "tdCutoffs": [
+        -6.24,
+        -5.42,
+        -3.36
+      ],
+      "pdCutoffs": [
+        -7.66,
+        -6.36,
+        -5.14
+      ]
+    },
+    {
+      "id": "p45",
+      "xOd": -9,
+      "y": -15,
+      "ageIntercept": 34.6299,
+      "slope": -0.062424,
+      "sdTd": 1.962,
+      "sdPd": 1.5994,
+      "tdCutoffs": [
+        -5.52,
+        -5.52,
+        -2.76
+      ],
+      "pdCutoffs": [
+        -4.9,
+        -4.8,
+        -4.01
+      ]
+    },
+    {
+      "id": "p46",
+      "xOd": -3,
+      "y": -15,
+      "ageIntercept": 34.9012,
+      "slope": -0.058066,
+      "sdTd": 1.8706,
+      "sdPd": 1.5206,
+      "tdCutoffs": [
+        -6.02,
+        -6.02,
+        -4.3
+      ],
+      "pdCutoffs": [
+        -6.59,
+        -6.58,
+        -5.05
+      ]
+    },
+    {
+      "id": "p47",
+      "xOd": 3,
+      "y": -15,
+      "ageIntercept": 35.0127,
+      "slope": -0.059101,
+      "sdTd": 1.9042,
+      "sdPd": 1.5588,
+      "tdCutoffs": [
+        -5.26,
+        -5.18,
+        -4.06
+      ],
+      "pdCutoffs": [
+        -5.88,
+        -5.65,
+        -4.63
+      ]
+    },
+    {
+      "id": "p48",
+      "xOd": 9,
+      "y": -15,
+      "ageIntercept": 34.9644,
+      "slope": -0.065532,
+      "sdTd": 2.0629,
+      "sdPd": 1.7139,
+      "tdCutoffs": [
+        -3.74,
+        -3.56,
+        -2.2
+      ],
+      "pdCutoffs": [
+        -5.05,
+        -4.74,
+        -3.95
+      ]
+    },
+    {
+      "id": "p49",
+      "xOd": 15,
+      "y": -15,
+      "ageIntercept": 34.7565,
+      "slope": -0.077371,
+      "sdTd": 2.3467,
+      "sdPd": 1.9861,
+      "tdCutoffs": [
+        -5.35,
+        -4.81,
+        -3.65
+      ],
+      "pdCutoffs": [
+        -6.96,
+        -6.46,
+        -5.06
+      ]
+    },
+    {
+      "id": "p50",
+      "xOd": -9,
+      "y": -21,
+      "ageIntercept": 33.5599,
+      "slope": -0.074551,
+      "sdTd": 2.5539,
+      "sdPd": 2.1274,
+      "tdCutoffs": [
+        -7.65,
+        -7.35,
+        -5.24
+      ],
+      "pdCutoffs": [
+        -7.87,
+        -7.49,
+        -6.47
+      ]
+    },
+    {
+      "id": "p51",
+      "xOd": -3,
+      "y": -21,
+      "ageIntercept": 33.8312,
+      "slope": -0.070192,
+      "sdTd": 2.4625,
+      "sdPd": 2.0486,
+      "tdCutoffs": [
+        -8.05,
+        -7.24,
+        -5.21
+      ],
+      "pdCutoffs": [
+        -9.13,
+        -7.76,
+        -5.76
+      ]
+    },
+    {
+      "id": "p52",
+      "xOd": 3,
+      "y": -21,
+      "ageIntercept": 33.9427,
+      "slope": -0.071228,
+      "sdTd": 2.4961,
+      "sdPd": 2.0868,
+      "tdCutoffs": [
+        -8.03,
+        -7.52,
+        -3.32
+      ],
+      "pdCutoffs": [
+        -7.53,
+        -7.53,
+        -4.75
+      ]
+    },
+    {
+      "id": "p53",
+      "xOd": 9,
+      "y": -21,
+      "ageIntercept": 33.8943,
+      "slope": -0.077658,
+      "sdTd": 2.6548,
+      "sdPd": 2.2419,
+      "tdCutoffs": [
+        -5.83,
+        -5.78,
+        -2.93
+      ],
+      "pdCutoffs": [
+        -5.68,
+        -5.26,
+        -4.28
+      ]
+    }
+  ]
+}

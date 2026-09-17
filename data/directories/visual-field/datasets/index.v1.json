@@ -1,0 +1,7 @@
+{
+  "schema": "visual-field-datasets/v1",
+  "note": "Shipped normative datasets (two-lane spec §5). Each entry names one artifact in this directory — a versioned ophthoscribe.visual-field-dataset.v1 document whose provenance rides verbatim; scripts/visual-field-dataset-export.mjs proves the shipped 24-2 table equals the operator-accepted one; scripts/check-visual-field-production.mjs gates promotion on every entry's provenance. Custom datasets are entity-store records, never listed here.",
+  "entries": [
+    { "id": "ophthoscribe-24-2-normative-lf", "version": "1.0.0", "pattern": "24-2", "label": "OphthoScribe 24-2 normative (calibrated, operator-accepted 2026-08-16)", "file": "ophthoscribe-24-2-normative-lf.v1.json" }
+  ]
+}

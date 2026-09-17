@@ -1,0 +1,11 @@
+{
+  "schema": "visual-field-vendors/v1",
+  "entries": [
+    { "id": "zeiss", "label": "Carl Zeiss Meditec", "short": "Zeiss", "aliases": ["carl zeiss meditec", "zeiss", "czm"], "curation": "seed", "codes": [],
+      "devices": [
+        { "id": "hfa", "label": "Humphrey Field Analyzer", "short": "HFA", "aliases": ["humphrey field analyzer", "hfa", "hfa3", "hfa ii-i", "humphrey"],
+          "software": [ { "id": "forum", "label": "FORUM export", "short": "FORUM", "aliases": ["forum"], "protocols": ["zeiss_multi"] } ] }
+      ] },
+    { "id": "unknown", "label": "Unknown vendor", "short": "", "aliases": [], "curation": "seed", "codes": [], "devices": [] }
+  ]
+}

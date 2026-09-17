@@ -1,0 +1,7 @@
+{
+  "schema": "visual-field-backgrounds/v1",
+  "entries": [
+    { "id": "31.5_asb", "label": "31.5 asb", "short": "31.5 asb", "aliases": ["31.5 asb", "31.5"], "value": 31.5, "unit": "asb", "curation": "seed", "codes": [] },
+    { "id": "10_cd_m2", "label": "10 cd/m²", "short": "10 cd/m²", "aliases": ["10 cd/m2", "10 cd/m²", "10cd/m2"], "value": 10, "unit": "cd/m2", "curation": "seed", "codes": [] }
+  ]
+}

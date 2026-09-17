@@ -1,0 +1,14 @@
+{
+  "schema": "visual-field-report-kinds/v1",
+  "entries": [
+    { "id": "overview", "label": "VF Overview", "short": "Overview", "aliases": ["overview"], "format": "pdf-printout", "multiTest": true, "protocolId": "zeiss_multi", "curation": "seed" },
+    { "id": "single-field", "label": "Single Field Analysis", "short": "SFA", "aliases": ["single field analysis", "sfa"], "format": "pdf-printout", "multiTest": false, "protocolId": null, "curation": "seed" },
+    { "id": "gpa", "label": "Guided Progression Analysis", "short": "GPA", "aliases": ["guided progression analysis", "gpa"], "format": "pdf-printout", "multiTest": true, "protocolId": null, "curation": "seed" },
+    { "id": "hfa-xml", "label": "HFA XML export", "short": "XML", "aliases": [], "format": "hfa-xml", "multiTest": false, "protocolId": null, "curation": "seed" },
+    { "id": "dicom-opv", "label": "DICOM OPV", "short": "OPV", "aliases": [], "format": "dicom-opv", "multiTest": false, "protocolId": null, "curation": "seed" },
+    { "id": "e2e", "label": "Heidelberg E2E", "short": "E2E", "aliases": [], "format": "e2e", "multiTest": false, "protocolId": null, "curation": "seed" },
+    { "id": "threshold-json", "label": "Visual field source document", "short": "Source", "aliases": [], "format": "threshold-json", "multiTest": false, "protocolId": null, "curation": "seed" },
+    { "id": "tds-csv", "label": "Threshold CSV", "short": "CSV", "aliases": [], "format": "tds-csv", "multiTest": false, "protocolId": null, "curation": "seed" },
+    { "id": "unrecognised", "label": "Unrecognised report", "short": "?", "aliases": [], "format": "pdf-printout", "multiTest": false, "protocolId": null, "curation": "seed" }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "protocol": "visual-field-extraction-protocol/v1",
+  "id": "zeiss_multi",
+  "version": 1,
+  "source": {
+    "vendor": "zeiss",
+    "device": "hfa",
+    "software": "forum",
+    "reportKind": "overview"
+  },
+  "page": {
+    "width": 595.28,
+    "height": 841.89,
+    "tolerance": 2
+  },
+  "detect": {
+    "anchors": [
+      {
+        "text": "Overview",
+        "x": 71,
+        "y": 128.6
+      },
+      {
+        "textPrefix": "Central",
+        "textSuffix": "Threshold Test",
+        "x": 411,
+        "y": 128.6
+      },
+      {
+        "text": "Threshold (dB)",
+        "x": 198,
+        "y": 149.5
+      }
+    ]
+  },
+  "reader": {
+    "default": "text-layer"
+  },
+  "regions": [
+    {
+      "id": "identity.name",
+      "home": "identity.name",
+      "rect": [
+        45,
+        33,
+        300,
+        11
+      ],
+      "parser": "text"
+    },
+    {
+      "id": "identity.birthDate",
+      "home": "identity.birthDate",
+      "rect": [
+        61,
+        47,
+        120,
+        11
+      ],
+      "parser": "isoDate"
+    },
+    {
+      "id": "identity.sex",
+      "home": "identity.sex",
+      "rect": [
+        46,
+        60,
+        80,
+        11
+      ],
+      "parser": "enum:sex"
+    },
+    {
+      "id": "identity.patientId",
+      "home": "identity.patientId",
+      "rect": [
+        53,
+        74,
+        120,
+        11
+      ],
+      "parser": "text"
+    },
+    {
+      "id": "facility.name",
+      "home": "source.facility.name",
+      "rect": [
+        355,
+        74,
+        220,
+        11
+      ],
+      "parser": "text"
+    },
+    {
+      "id": "facility.address",
+      "home": "source.facility.address",
+      "rect": [
+        372,
+        85,
+        210,
+        11
+      ],
+      "parser": "text"
+    },
+    {
+      "id": "facility.phone",
+      "home": "source.facility.phone",
+      "rect": [
+        372,
+        96,
+        120,
+        11
+      ],
+      "parser": "text"
+    },
+    {
+      "id": "identity.eye",
+      "home": "measurement.eye",
+      "rect": [
+        40,
+        118,
+        25,
+        13
+      ],
+      "parser": "enum:eye"
+    },
+    {
+      "id": "report.kind",
+      "home": "source.reportKindLabel",
+      "rect": [
+        69,
+        119,
+        60,
+        11
+      ],
+      "parser": "text"
+    },
+    {
+      "id": "report.title",
+      "home": "source.reportTitle",
+      "rect": [
+        400,
+        119,
+        170,
+        11
+      ],
+      "parser": "text"
+    },
+    {
+      "id": "document.version",
+      "home": "acquisition.device.software",
+      "rect": [
+        165,
+        767,
+        60,
+        9
+      ],
+      "parser": "version"
+    },
+    {
+      "id": "document.createdAt",
+      "home": "source.createdAt",
+      "rect": [
+        325,
+        767,
+        110,
+        9
+      ],
+      "parser": "createdAt"
+    },
+    {
+      "id": "document.page",
+      "home": "source.pageOf",
+      "rect": [
+        530,
+        767,
+        60,
+        9
+      ],
+      "parser": "pageOf"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "test",
+      "origin": {
+        "x": 0,
+        "y": 162.3
+      },
+      "pitch": {
+        "x": 0,
+        "y": 180
+      },
+      "count": 3,
+      "regions": [
+        {
+          "id": "acquisition.testDate",
+          "home": "acquisition.testDate",
+          "rect": [
+            32,
+            -9,
+            75,
+            11
+          ],
+          "parser": "isoDate",
+          "anchor": true
+        },
+        {
+          "id": "testDefinition.strategy",
+          "home": "testDefinition.strategy",
+          "rect": [
+            130,
+            -9,
+            90,
+            11
+          ],
+          "parser": "strategy"
+        },
+        {
+          "id": "globals.ght",
+          "home": "analyses.printed.ght",
+          "rect": [
+            235,
+            -9,
+            130,
+            11
+          ],
+          "parser": "ght"
+        },
+        {
+          "id": "globals.vfi",
+          "home": "analyses.printed.vfi",
+          "rect": [
+            495,
+            -9,
+            75,
+            11
+          ],
+          "parser": "percentLabelled:VFI"
+        },
+        {
+          "id": "reliability.lowReliability",
+          "home": "measurement.reliability.message",
+          "rect": [
+            32,
+            1.5,
+            115,
+            11
+          ],
+          "parser": "flag:Low Test Reliability"
+        },
+        {
+          "id": "measurement.foveaThreshold",
+          "home": "measurement.foveaThreshold",
+          "rect": [
+            262,
+            1.5,
+            60,
+            11
+          ],
+          "parser": "fovea"
+        },
+        {
+          "id": "reliability.fl",
+          "home": "measurement.reliability.fl",
+          "rect": [
+            355,
+            1.5,
+            60,
+            11
+          ],
+          "parser": "fraction:FL"
+        },
+        {
+          "id": "reliability.fn",
+          "home": "measurement.reliability.fn",
+          "rect": [
+            435,
+            1.5,
+            45,
+            11
+          ],
+          "parser": "percentFlagged:FN"
+        },
+        {
+          "id": "reliability.fp",
+          "home": "measurement.reliability.fp",
+          "rect": [
+            525,
+            1.5,
+            45,
+            11
+          ],
+          "parser": "percentFlagged:FP"
+        },
+        {
+          "id": "acquisition.pupilDiameterMm",
+          "home": "acquisition.pupilDiameterMm",
+          "rect": [
+            531,
+            13.5,
+            45,
+            11
+          ],
+          "parser": "pupilMm"
+        },
+        {
+          "id": "globals.md",
+          "home": "analyses.printed.md",
+          "rect": [
+            32,
+            150,
+            125,
+            11
+          ],
+          "parser": "dbLabelled:MD"
+        },
+        {
+          "id": "globals.psd",
+          "home": "analyses.printed.psd",
+          "rect": [
+            182,
+            150,
+            160,
+            11
+          ],
+          "parser": "dbLabelled:PSD"
+        },
+        {
+          "id": "testDefinition.pattern",
+          "home": "testDefinition.pattern",
+          "rect": [
+            32,
+            150,
+            60,
+            11
+          ],
+          "parser": "patternFromLabel"
+        }
+      ],
+      "grids": [
+        {
+          "idPrefix": "measurement.threshold.p",
+          "home": "measurement.points.p",
+          "origin": {
+            "x": 167.65,
+            "y": 20.9
+          },
+          "pitch": {
+            "x": 13.37,
+            "y": 13.35
+          },
+          "cell": {
+            "w": 12,
+            "h": 12
+          },
+          "parser": "thresholdCell",
+          "variants": {
+            "by": "testDefinition.pattern",
+            "cases": {
+              "24-2": {
+                "layout": "24-2",
+                "rowOffset": 1,
+                "mirror": {
+                  "OD": false,
+                  "OS": true
+                }
+              },
+              "30-2": {
+                "layout": "30-2",
+                "rowOffset": 0,
+                "mirror": {
+                  "OD": false,
+                  "OS": true
+                }
+              }
+            }
+          }
+        },
+        {
+          "idPrefix": "analysis.totalDeviationProbability.p",
+          "home": "analyses.printed.points.p.totalDeviationProbability",
+          "reader": "raster-glyph",
+          "parser": "probabilityGlyph",
+          "origin": {
+            "x": 305.16,
+            "y": 20.58
+          },
+          "pitch": {
+            "x": 13.333,
+            "y": 13.36
+          },
+          "cell": {
+            "w": 12,
+            "h": 12
+          },
+          "variants": {
+            "by": "testDefinition.pattern",
+            "cases": {
+              "24-2": {
+                "layout": "24-2",
+                "rowOffset": 1,
+                "mirror": {
+                  "OD": false,
+                  "OS": true
+                }
+              },
+              "30-2": {
+                "layout": "30-2",
+                "rowOffset": 0,
+                "mirror": {
+                  "OD": false,
+                  "OS": true
+                }
+              }
+            }
+          }
+        },
+        {
+          "idPrefix": "analysis.patternDeviationProbability.p",
+          "home": "analyses.printed.points.p.patternDeviationProbability",
+          "reader": "raster-glyph",
+          "parser": "probabilityGlyph",
+          "origin": {
+            "x": 443.16,
+            "y": 20.58
+          },
+          "pitch": {
+            "x": 13.333,
+            "y": 13.36
+          },
+          "cell": {
+            "w": 12,
+            "h": 12
+          },
+          "variants": {
+            "by": "testDefinition.pattern",
+            "cases": {
+              "24-2": {
+                "layout": "24-2",
+                "rowOffset": 1,
+                "mirror": {
+                  "OD": false,
+                  "OS": true
+                }
+              },
+              "30-2": {
+                "layout": "30-2",
+                "rowOffset": 0,
+                "mirror": {
+                  "OD": false,
+                  "OS": true
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

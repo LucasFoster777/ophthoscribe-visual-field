@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; font-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<link rel="icon" href="data:,">
+<title>Visual Field · Zeiss & Dev Views</title>
+<link rel="stylesheet" href="css/visual-field-viewer.css">
+<link rel="stylesheet" href="css/demo.css">
+<script type="module" src="js/app.mjs"></script>
+</head>
+<body>
+<main class="demo-shell">
+<header class="demo-header"><p class="demo-eyebrow">Standalone visual field</p><h1>Zeiss View & Dev View</h1><p>Extract a supported report, inspect its source, and compare device results with calculated analysis.</p></header>
+<section class="demo-import" aria-label="Import reports">
+<button id="examples" type="button">Load synthetic examples (OD + OS)</button>
+<label class="demo-upload">Open local PDF <input id="upload" type="file" accept="application/pdf,.pdf" multiple></label>
+<button id="export" type="button" disabled>Download JSON</button>
+<button id="reset" type="button">Reset session</button>
+<p class="demo-note">Files are processed locally in this browser. No uploads or automatic storage. Supports Zeiss FORUM Overview 24-2 and 30-2.</p>
+</section>
+<p id="status" role="status" aria-live="polite">Load the synthetic examples or open a supported PDF to begin.</p>
+<section id="workspace" hidden>
+<div class="demo-selectors">
+<label>Eye <select id="eye"><option value="">All eyes</option><option>OD</option><option>OS</option></select></label>
+<label>Pattern <select id="pattern"><option value="">All patterns</option><option>24-2</option><option>30-2</option></select></label>
+<label>Examination date · eye · pattern <select id="examination"></select></label>
+</div>
+<div class="demo-toolbar">
+<div role="group" aria-label="Display view"><button id="zeiss" aria-pressed="true" type="button">Zeiss View</button><button id="dev" aria-pressed="false" type="button">Dev View</button></div>
+<a id="original" target="_blank" rel="noopener">Open original PDF</a>
+<button id="source-toggle" aria-expanded="false" aria-controls="source" type="button">Inspect source & regions</button>
+</div>
+<div id="dev-controls" hidden>
+<p class="demo-note">Calculated analysis · normative dataset redistribution status: unverified · clinical validation: not-validated.</p>
+<label>Computed block <select id="block"></select></label>
+<button id="recompute" type="button">Recompute</button>
+</div>
+<p id="analysis-status" role="status" aria-live="polite"></p>
+<div id="report"></div>
+<section id="source" aria-label="Source inspection" hidden></section>
+</section>
+<footer><p>Source revision <code>478e764144fe2261b53fb477ede094a2ad4bb494</code> · <a href="README.md">About this demo</a></p></footer>
+</main>
+</body>
+</html>

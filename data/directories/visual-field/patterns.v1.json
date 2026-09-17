@@ -1,0 +1,17 @@
+{
+  "schema": "visual-field-patterns/v1",
+  "coordinateBasis": "degrees-od-normalized",
+  "note": "Point ids follow the printed order (left to right, top to bottom) of the OD layout; OS reverses each row so x is OD-normalised: temporal is +x for both eyes, so the blind spot sits at (+15, ±3) for OD and OS alike. Blind-spot ids are proven by tests/core/visual-field-directories.test.js from the lattice, never typed.",
+  "entries": [
+    { "id": "24-2", "studyId": "study.ocular.visual_field_24_2", "label": "Central 24-2", "short": "24-2", "aliases": ["24-2", "central 24-2", "24 - 2"], "pointCount": 54, "pitchDegrees": 6,
+      "lattice": { "columns": 10, "rows": [4, 6, 8, 9, 9, 8, 6, 4], "columnStarts": [3, 2, 1, 0, 0, 1, 2, 3], "topDegrees": 21, "leftDegrees": -27 },
+      "blindSpot": { "OD": ["p25", "p34"], "OS": ["p19", "p28"] }, "curation": "seed", "codes": [] },
+    { "id": "30-2", "studyId": "study.ocular.visual_field_30_2", "label": "Central 30-2", "short": "30-2", "aliases": ["30-2", "central 30-2", "30 - 2"], "pointCount": 76, "pitchDegrees": 6,
+      "lattice": { "columns": 10, "rows": [4, 6, 8, 10, 10, 10, 10, 8, 6, 4], "columnStarts": [3, 2, 1, 0, 0, 0, 0, 1, 2, 3], "topDegrees": 27, "leftDegrees": -27 },
+      "blindSpot": { "OD": ["p35", "p45"], "OS": ["p30", "p40"] }, "curation": "seed", "codes": [] },
+    { "id": "10-2", "studyId": "study.ocular.visual_field_10_2", "label": "Central 10-2", "short": "10-2", "aliases": ["10-2", "central 10-2", "10 - 2"], "pointCount": 68, "pitchDegrees": 2,
+      "lattice": { "columns": 10, "rows": [2, 6, 8, 8, 10, 10, 8, 8, 6, 2], "columnStarts": [4, 2, 1, 0, 0, 0, 0, 1, 2, 4], "topDegrees": 9, "leftDegrees": -9 },
+      "blindSpot": { "OD": [], "OS": [] }, "curation": "seed", "codes": [],
+      "note": "Seed lattice (2026-08-28): the rotationally symmetric 68-point set on the 2-degree lattice; no protocol reads it yet — re-measure against a real 10-2 printout before a protocol depends on it." }
+  ]
+}

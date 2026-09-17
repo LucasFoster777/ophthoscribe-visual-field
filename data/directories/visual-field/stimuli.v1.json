@@ -1,0 +1,15 @@
+{
+  "schema": "visual-field-stimuli/v1",
+  "entries": [
+    { "id": "i", "label": "Goldmann I", "short": "I", "aliases": ["i", "size i"], "curation": "seed", "codes": [] },
+    { "id": "ii", "label": "Goldmann II", "short": "II", "aliases": ["ii", "size ii"], "curation": "seed", "codes": [] },
+    { "id": "iii", "label": "Goldmann III", "short": "III", "aliases": ["iii", "size iii"], "curation": "seed", "codes": [] },
+    { "id": "iv", "label": "Goldmann IV", "short": "IV", "aliases": ["iv", "size iv"], "curation": "seed", "codes": [] },
+    { "id": "v", "label": "Goldmann V", "short": "V", "aliases": ["v", "size v"], "curation": "seed", "codes": [] }
+  ],
+  "colors": [
+    { "id": "white", "label": "White", "aliases": ["white"], "curation": "seed" },
+    { "id": "blue", "label": "Blue", "aliases": ["blue"], "curation": "seed" },
+    { "id": "red", "label": "Red", "aliases": ["red"], "curation": "seed" }
+  ]
+}
