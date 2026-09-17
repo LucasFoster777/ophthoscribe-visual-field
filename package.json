@@ -7,12 +7,15 @@
     "node": ">=22.13"
   },
   "scripts": {
-    "start": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "start": "node server.mjs",
     "test:extraction": "node --test tests/core/visual-field-protocols-zeiss-multi.test.js",
     "test:analysis": "node --test tests/core/visual-field-analysis.test.js tests/core/visual-field-normative-dataset.test.js tests/core/visual-field-grayscale-worker.test.js",
-    "test:display": "node --test tests/core/visual-field-door.test.js tests/core/standalone-isolation.test.js"
+    "test:display": "node --test tests/core/visual-field-door.test.js tests/core/standalone-isolation.test.js",
+    "pipeline": "node pipeline.mjs",
+    "test:pipeline": "node --test tests/core/pipeline-*.test.mjs"
   },
-  "devDependencies": {
+  "dependencies": {
+    "graphql": "16.11.0",
     "@napi-rs/canvas": "1.0.8",
     "pdfjs-dist": "6.2.108"
   }

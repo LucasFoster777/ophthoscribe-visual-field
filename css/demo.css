@@ -67,3 +67,11 @@ footer { margin-top:32px; color:var(--text-muted); font-size:12px; }
 .vf-map-bayesian { font-size:9px; }
 #dev-controls label { max-width:100%; flex-wrap:wrap; }
 #dev-controls select { max-width:100%; }
+
+input:not([type=file]),textarea { border:1px solid #bcc4c6; border-radius:5px; padding:7px 10px; font:inherit; }
+textarea { display:block; width:100%; margin:12px 0; font-family:monospace; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; font-size:12px; max-height:500px; overflow:auto; }
+.output-preview:not(:empty),.canonical-json { background:#f0f3f3; padding:14px; border:1px solid var(--border); }
+#outcomes { padding-left:22px; font-size:13px; }
+#outcomes li { margin:8px 0; overflow-wrap:anywhere; }
+#outcomes button { margin-left:8px; font-size:12px; }

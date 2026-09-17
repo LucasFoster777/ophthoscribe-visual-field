@@ -5,22 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; font-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="data:,">
-<title>Visual Field · Zeiss & Dev Views</title>
+<title>Visual Field · Local pipeline</title>
 <link rel="stylesheet" href="css/visual-field-viewer.css">
 <link rel="stylesheet" href="css/demo.css">
 <script type="module" src="js/app.mjs"></script>
 </head>
 <body>
 <main class="demo-shell">
-<header class="demo-header"><p class="demo-eyebrow">Standalone visual field</p><h1>Zeiss View & Dev View</h1><p>Extract a supported report, inspect its source, and compare device results with calculated analysis.</p></header>
+<header class="demo-header"><p class="demo-eyebrow">Standalone visual field</p><h1>One clinical model. Multiple pathways.</h1><p>Import → extraction results → normalized data → analysis → outputs</p></header>
 <section class="demo-import" aria-label="Import reports">
-<button id="examples" type="button">Load synthetic examples (OD + OS)</button>
-<label class="demo-upload">Open local PDF <input id="upload" type="file" accept="application/pdf,.pdf" multiple></label>
-<button id="export" type="button" disabled>Download JSON</button>
+<button id="examples" type="button">Load synthetic demonstration</button>
+<label>Synthetic subject context <input id="subject" placeholder="Required if absent from input" autocomplete="off"></label>
+<label class="demo-upload">Open local files <input id="upload" type="file" accept="application/pdf,.pdf,.json,.csv" multiple></label>
+<button id="analyze-all" type="button">Analyze all eligible examinations</button>
 <button id="reset" type="button">Reset session</button>
-<p class="demo-note">Files are processed locally in this browser. No uploads or automatic storage. Supports Zeiss FORUM Overview 24-2 and 30-2.</p>
+<p class="demo-note">Files are processed by a loopback service on this machine. Session memory clears on restart or reset. Supported: Zeiss Overview PDF, source/session JSON, measured-threshold CSV, and explicit 24-2 matrix JSON. Scanned PDFs, other layouts, TD-only research, XML, DICOM, and E2E are unsupported.</p>
 </section>
 <p id="status" role="status" aria-live="polite">Load the synthetic examples or open a supported PDF to begin.</p>
+<section aria-label="Extraction outcomes"><h2>Extraction results</h2><ul id="outcomes"></ul><ul id="calculation-outcomes" aria-label="Calculation outcomes"></ul></section>
 <section id="workspace" hidden>
 <div class="demo-selectors">
 <label>Eye <select id="eye"><option value="">All eyes</option><option>OD</option><option>OS</option></select></label>
@@ -29,8 +31,8 @@
 </div>
 <div class="demo-toolbar">
 <div role="group" aria-label="Display view"><button id="zeiss" aria-pressed="true" type="button">Zeiss View</button><button id="dev" aria-pressed="false" type="button">Dev View</button></div>
-<a id="original" target="_blank" rel="noopener">Open original PDF</a>
-<button id="source-toggle" aria-expanded="false" aria-controls="source" type="button">Inspect source & regions</button>
+<a id="original" target="_blank" rel="noopener">Open original source</a>
+<button id="source-toggle" aria-expanded="false" aria-controls="source" type="button">Inspect normalized data & source</button>
 </div>
 <div id="dev-controls" hidden>
 <p class="demo-note">Calculated analysis · normative dataset redistribution status: unverified · clinical validation: not-validated.</p>
@@ -40,6 +42,26 @@
 <p id="analysis-status" role="status" aria-live="polite"></p>
 <div id="report"></div>
 <section id="source" aria-label="Source inspection" hidden></section>
+</section>
+<section aria-label="Outputs">
+<h2>Outputs</h2>
+<p class="demo-note">Generic integration exports for review. These are not accepted IRIS submissions. Download session JSON to reopen the session with original files.</p>
+<div class="demo-selectors">
+<label>Records <select id="output-scope"><option value="all">All examinations</option><option value="selected">Selected examination</option></select></label>
+<label>Analysis <select id="analysis-selection"><option value="all">All calculation history</option><option value="source-only">Source only</option></select></label>
+<label>Format <select id="output-format"><option value="json">Portable session JSON</option><option value="csv">Relational CSV package</option><option value="fhir">FHIR R4 collection Bundle</option></select></label>
+<button id="preview-output" type="button">Preview output</button><button id="export" type="button">Download output</button>
+</div><pre id="preview" class="output-preview"></pre>
+<details><summary>Live GraphQL queries</summary>
+<label>Example <select id="query-example">
+<option value='{ sources { id name format originalAvailable provenance { adapter adapterVersion detail } } }'>Source inspection</option>
+<option value='{ examinations(limit: 100) { id subject eye date pattern } }'>Bilateral examinations</option>
+<option value='{ examinations(limit: 5) { id measurements { id value unit absenceReason censored sourceLocation } } }'>Missing and censored values</option>
+<option value='{ examinations(limit: 5) { id eye analyses(selection: "all") { id origin globals { md psd vfi } provenance { detail } } } }'>Device, source and calculated results</option>
+</select></label>
+<label for="query">Read-only query</label><textarea id="query" rows="7" spellcheck="false">{ sources { id name format originalAvailable } }</textarea>
+<button id="query-run" type="button">Run query</button><pre id="query-result" class="output-preview"></pre>
+</details>
 </section>
 <footer><p>Source revision <code>478e764144fe2261b53fb477ede094a2ad4bb494</code> · <a href="README.md">About this demo</a></p></footer>
 </main>

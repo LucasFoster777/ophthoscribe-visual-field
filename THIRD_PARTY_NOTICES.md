@@ -4,7 +4,7 @@ No new license is granted by this repository. Application source was selectively
 
 ## PDF.js
 
-The vendored browser distribution is Mozilla PDF.js (`pdfjs-dist`) version 6.2.108, licensed under the Apache License, Version 2.0. The full license is retained at `js/vendor/pdfjs/LICENSE`; copyright notices remain in the distribution files. The matching npm package is used by the local extraction tests.
+The vendored browser distribution is Mozilla PDF.js (`pdfjs-dist`) version 6.2.108, licensed under the Apache License, Version 2.0. The full license is retained at `js/vendor/pdfjs/LICENSE`; copyright notices remain in the distribution files. The matching npm package is used by the local service, CLI and extraction tests.
 
 PDF.js standard fonts retain their separate notices:
 
@@ -19,6 +19,6 @@ The artifact records `redistributionRights: derived-from-suny-iu-visualfields-gp
 
 ## Test dependencies and examples
 
-`@napi-rs/canvas` is an npm-installed development dependency for PDF rasterization in extraction tests. Its own package license and notices are distributed with the dependency; it is not vendored into this repository. npm-installed dependencies retain their upstream licenses.
+`@napi-rs/canvas` is an npm-installed runtime dependency for local PDF rasterization. `graphql` 16.11.0 provides the typed read-only endpoint and is MIT licensed. Their own package licenses and notices are distributed with the dependencies; they are not vendored into this repository. npm-installed dependencies retain their upstream licenses.
 
 The two Zeiss Overview PDFs are documented synthetic demo patient examples, as recorded in their accompanying fixture README. Vendor names identify the source report format and do not imply endorsement.

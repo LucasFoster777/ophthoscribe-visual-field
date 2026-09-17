@@ -1,0 +1,3726 @@
+{
+  "extractedGraphs": [
+    {
+      "source": {
+        "schema": "ophthoscribe.visual-field-source.v1",
+        "identifier": "vfs-a72623ce3d45ed326221322c45b886275c7afbab693cc75c",
+        "file": {
+          "name": "source-bilateral.json",
+          "mime": "application/json",
+          "bytes": 38354,
+          "sha256": "dcec5a1acc2313da7e9144cc94f37d508a7735d12adb03424f9ce58a4c3204aa",
+          "pageCount": 0
+        },
+        "format": "threshold-json",
+        "vendor": "unknown",
+        "device": "",
+        "software": "",
+        "reportKind": "threshold-json",
+        "protocol": null,
+        "registration": {
+          "detectedAt": "",
+          "anchorsMatched": 0,
+          "pageSize": null
+        },
+        "parseState": "parsed",
+        "testCount": 2,
+        "subject": "patients/synthetic-legacy",
+        "encounter": "",
+        "deposit": {
+          "at": "",
+          "by": "local-demo"
+        },
+        "facility": {
+          "name": {
+            "state": "not-present-in-source"
+          },
+          "address": {
+            "state": "not-present-in-source"
+          },
+          "phone": {
+            "state": "not-present-in-source"
+          }
+        },
+        "reportKindLabel": {
+          "state": "not-present-in-source"
+        },
+        "reportTitle": {
+          "state": "not-present-in-source"
+        },
+        "createdAt": {
+          "state": "not-present-in-source"
+        },
+        "pageOf": {
+          "state": "not-present-in-source"
+        }
+      },
+      "tests": [
+        {
+          "schema": "ophthoscribe.visual-field-test.v1",
+          "identifier": "vft-c54f097bffd2df44bcee7d65e15a1c60995ed5bc408d1cdb",
+          "source": "visual-field-sources/vfs-a72623ce3d45ed326221322c45b886275c7afbab693cc75c",
+          "subject": "patients/synthetic-legacy",
+          "identity": {
+            "name": {
+              "state": "not-present-in-source"
+            },
+            "birthDate": {
+              "state": "not-present-in-source"
+            },
+            "patientId": {
+              "state": "not-present-in-source"
+            },
+            "sex": {
+              "state": "not-present-in-source"
+            }
+          },
+          "acquisition": {
+            "device": {
+              "manufacturer": {
+                "state": "not-present-in-source"
+              },
+              "model": {
+                "state": "not-present-in-source"
+              },
+              "serial": {
+                "state": "not-present-in-source"
+              },
+              "software": {
+                "state": "not-present-in-source"
+              }
+            },
+            "testDate": "2026-01-10",
+            "testTime": {
+              "state": "not-present-in-source"
+            },
+            "durationSeconds": {
+              "state": "not-present-in-source"
+            },
+            "ageYears": {
+              "value": 55
+            },
+            "pupilDiameterMm": {
+              "state": "not-present-in-source"
+            },
+            "refraction": {
+              "state": "not-present-in-source"
+            },
+            "visualAcuity": {
+              "state": "not-present-in-source"
+            },
+            "fixationMonitor": {
+              "state": "not-present-in-source"
+            },
+            "fixationTarget": {
+              "state": "not-present-in-source"
+            }
+          },
+          "testDefinition": {
+            "pattern": "24-2",
+            "strategy": {
+              "state": "not-present-in-source"
+            },
+            "stimulus": {
+              "state": "not-present-in-source"
+            },
+            "background": {
+              "state": "not-present-in-source"
+            }
+          },
+          "measurement": {
+            "eye": "OD",
+            "grid": {
+              "pattern": "24-2",
+              "coordinateBasis": "degrees-od-normalized",
+              "points": [
+                {
+                  "id": "p00",
+                  "x": -9,
+                  "y": 21
+                },
+                {
+                  "id": "p01",
+                  "x": -3,
+                  "y": 21
+                },
+                {
+                  "id": "p02",
+                  "x": 3,
+                  "y": 21
+                },
+                {
+                  "id": "p03",
+                  "x": 9,
+                  "y": 21
+                },
+                {
+                  "id": "p04",
+                  "x": -15,
+                  "y": 15
+                },
+                {
+                  "id": "p05",
+                  "x": -9,
+                  "y": 15
+                },
+                {
+                  "id": "p06",
+                  "x": -3,
+                  "y": 15
+                },
+                {
+                  "id": "p07",
+                  "x": 3,
+                  "y": 15
+                },
+                {
+                  "id": "p08",
+                  "x": 9,
+                  "y": 15
+                },
+                {
+                  "id": "p09",
+                  "x": 15,
+                  "y": 15
+                },
+                {
+                  "id": "p10",
+                  "x": -21,
+                  "y": 9
+                },
+                {
+                  "id": "p11",
+                  "x": -15,
+                  "y": 9
+                },
+                {
+                  "id": "p12",
+                  "x": -9,
+                  "y": 9
+                },
+                {
+                  "id": "p13",
+                  "x": -3,
+                  "y": 9
+                },
+                {
+                  "id": "p14",
+                  "x": 3,
+                  "y": 9
+                },
+                {
+                  "id": "p15",
+                  "x": 9,
+                  "y": 9
+                },
+                {
+                  "id": "p16",
+                  "x": 15,
+                  "y": 9
+                },
+                {
+                  "id": "p17",
+                  "x": 21,
+                  "y": 9
+                },
+                {
+                  "id": "p18",
+                  "x": -27,
+                  "y": 3
+                },
+                {
+                  "id": "p19",
+                  "x": -21,
+                  "y": 3
+                },
+                {
+                  "id": "p20",
+                  "x": -15,
+                  "y": 3
+                },
+                {
+                  "id": "p21",
+                  "x": -9,
+                  "y": 3
+                },
+                {
+                  "id": "p22",
+                  "x": -3,
+                  "y": 3
+                },
+                {
+                  "id": "p23",
+                  "x": 3,
+                  "y": 3
+                },
+                {
+                  "id": "p24",
+                  "x": 9,
+                  "y": 3
+                },
+                {
+                  "id": "p25",
+                  "x": 15,
+                  "y": 3
+                },
+                {
+                  "id": "p26",
+                  "x": 21,
+                  "y": 3
+                },
+                {
+                  "id": "p27",
+                  "x": -27,
+                  "y": -3
+                },
+                {
+                  "id": "p28",
+                  "x": -21,
+                  "y": -3
+                },
+                {
+                  "id": "p29",
+                  "x": -15,
+                  "y": -3
+                },
+                {
+                  "id": "p30",
+                  "x": -9,
+                  "y": -3
+                },
+                {
+                  "id": "p31",
+                  "x": -3,
+                  "y": -3
+                },
+                {
+                  "id": "p32",
+                  "x": 3,
+                  "y": -3
+                },
+                {
+                  "id": "p33",
+                  "x": 9,
+                  "y": -3
+                },
+                {
+                  "id": "p34",
+                  "x": 15,
+                  "y": -3
+                },
+                {
+                  "id": "p35",
+                  "x": 21,
+                  "y": -3
+                },
+                {
+                  "id": "p36",
+                  "x": -21,
+                  "y": -9
+                },
+                {
+                  "id": "p37",
+                  "x": -15,
+                  "y": -9
+                },
+                {
+                  "id": "p38",
+                  "x": -9,
+                  "y": -9
+                },
+                {
+                  "id": "p39",
+                  "x": -3,
+                  "y": -9
+                },
+                {
+                  "id": "p40",
+                  "x": 3,
+                  "y": -9
+                },
+                {
+                  "id": "p41",
+                  "x": 9,
+                  "y": -9
+                },
+                {
+                  "id": "p42",
+                  "x": 15,
+                  "y": -9
+                },
+                {
+                  "id": "p43",
+                  "x": 21,
+                  "y": -9
+                },
+                {
+                  "id": "p44",
+                  "x": -15,
+                  "y": -15
+                },
+                {
+                  "id": "p45",
+                  "x": -9,
+                  "y": -15
+                },
+                {
+                  "id": "p46",
+                  "x": -3,
+                  "y": -15
+                },
+                {
+                  "id": "p47",
+                  "x": 3,
+                  "y": -15
+                },
+                {
+                  "id": "p48",
+                  "x": 9,
+                  "y": -15
+                },
+                {
+                  "id": "p49",
+                  "x": 15,
+                  "y": -15
+                },
+                {
+                  "id": "p50",
+                  "x": -9,
+                  "y": -21
+                },
+                {
+                  "id": "p51",
+                  "x": -3,
+                  "y": -21
+                },
+                {
+                  "id": "p52",
+                  "x": 3,
+                  "y": -21
+                },
+                {
+                  "id": "p53",
+                  "x": 9,
+                  "y": -21
+                }
+              ]
+            },
+            "points": [
+              {
+                "id": "p00",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p01",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p02",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p03",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p04",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p05",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p06",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p07",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p08",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p09",
+                "threshold": {
+                  "state": "not-extracted"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p10",
+                "threshold": {
+                  "value": 0,
+                  "unit": "dB",
+                  "censored": true
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p11",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p12",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p13",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p14",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p15",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p16",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p17",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p18",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p19",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p20",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p21",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p22",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p23",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p24",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p25",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p26",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p27",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p28",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p29",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p30",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p31",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p32",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p33",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p34",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p35",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p36",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p37",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p38",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p39",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p40",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p41",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p42",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p43",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p44",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p45",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p46",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p47",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p48",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p49",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p50",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p51",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p52",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p53",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              }
+            ],
+            "foveaThreshold": {
+              "state": "not-present-in-source"
+            },
+            "blindSpot": {
+              "state": "not-present-in-source"
+            },
+            "reliability": {
+              "fl": {
+                "state": "not-present-in-source"
+              },
+              "fp": {
+                "state": "not-present-in-source"
+              },
+              "fn": {
+                "state": "not-present-in-source"
+              },
+              "message": {
+                "state": "not-present-in-source"
+              }
+            },
+            "gaze": {
+              "state": "not-present-in-source"
+            }
+          },
+          "analyses": [
+            {
+              "origin": "printed",
+              "engineVersion": "",
+              "values": {
+                "md": {
+                  "value": -2.25,
+                  "unit": "dB"
+                },
+                "psd": {
+                  "value": 2.1,
+                  "unit": "dB"
+                },
+                "vfi": {
+                  "value": 96,
+                  "unit": "%"
+                },
+                "ght": {
+                  "state": "not-present-in-source"
+                },
+                "mdHemifield": {
+                  "state": "not-present-in-source"
+                },
+                "sf": {
+                  "state": "not-present-in-source"
+                },
+                "cpsd": {
+                  "state": "not-present-in-source"
+                },
+                "points": [
+                  {
+                    "id": "p00",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p01",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p02",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p03",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p04",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p05",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p06",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p07",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p08",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p09",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p10",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p11",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p12",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p13",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p14",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p15",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p16",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p17",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p18",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p19",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p20",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p21",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p22",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p23",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p24",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p25",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p26",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p27",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p28",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p29",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p30",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p31",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p32",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p33",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p34",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p35",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p36",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p37",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p38",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p39",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p40",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p41",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p42",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p43",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p44",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p45",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p46",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p47",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p48",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p49",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p50",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p51",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p52",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p53",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "extraction": {
+            "protocol": null,
+            "contentSha256": "dcec5a1acc2313da7e9144cc94f37d508a7735d12adb03424f9ce58a4c3204aa",
+            "page": 0,
+            "index": 0,
+            "points": []
+          },
+          "review": {
+            "state": "awaiting-review",
+            "at": "",
+            "by": ""
+          },
+          "seams": {
+            "artifacts": [],
+            "findings": [],
+            "overlays": []
+          }
+        },
+        {
+          "schema": "ophthoscribe.visual-field-test.v1",
+          "identifier": "vft-c997c4eb006a86ff3e95ae440df6536ee229f7efd97bf512",
+          "source": "visual-field-sources/vfs-a72623ce3d45ed326221322c45b886275c7afbab693cc75c",
+          "subject": "patients/synthetic-legacy",
+          "identity": {
+            "name": {
+              "state": "not-present-in-source"
+            },
+            "birthDate": {
+              "state": "not-present-in-source"
+            },
+            "patientId": {
+              "state": "not-present-in-source"
+            },
+            "sex": {
+              "state": "not-present-in-source"
+            }
+          },
+          "acquisition": {
+            "device": {
+              "manufacturer": {
+                "state": "not-present-in-source"
+              },
+              "model": {
+                "state": "not-present-in-source"
+              },
+              "serial": {
+                "state": "not-present-in-source"
+              },
+              "software": {
+                "state": "not-present-in-source"
+              }
+            },
+            "testDate": "2026-01-10",
+            "testTime": {
+              "state": "not-present-in-source"
+            },
+            "durationSeconds": {
+              "state": "not-present-in-source"
+            },
+            "ageYears": {
+              "value": 55
+            },
+            "pupilDiameterMm": {
+              "state": "not-present-in-source"
+            },
+            "refraction": {
+              "state": "not-present-in-source"
+            },
+            "visualAcuity": {
+              "state": "not-present-in-source"
+            },
+            "fixationMonitor": {
+              "state": "not-present-in-source"
+            },
+            "fixationTarget": {
+              "state": "not-present-in-source"
+            }
+          },
+          "testDefinition": {
+            "pattern": "24-2",
+            "strategy": {
+              "state": "not-present-in-source"
+            },
+            "stimulus": {
+              "state": "not-present-in-source"
+            },
+            "background": {
+              "state": "not-present-in-source"
+            }
+          },
+          "measurement": {
+            "eye": "OS",
+            "grid": {
+              "pattern": "24-2",
+              "coordinateBasis": "degrees-od-normalized",
+              "points": [
+                {
+                  "id": "p00",
+                  "x": 9,
+                  "y": 21
+                },
+                {
+                  "id": "p01",
+                  "x": 3,
+                  "y": 21
+                },
+                {
+                  "id": "p02",
+                  "x": -3,
+                  "y": 21
+                },
+                {
+                  "id": "p03",
+                  "x": -9,
+                  "y": 21
+                },
+                {
+                  "id": "p04",
+                  "x": 15,
+                  "y": 15
+                },
+                {
+                  "id": "p05",
+                  "x": 9,
+                  "y": 15
+                },
+                {
+                  "id": "p06",
+                  "x": 3,
+                  "y": 15
+                },
+                {
+                  "id": "p07",
+                  "x": -3,
+                  "y": 15
+                },
+                {
+                  "id": "p08",
+                  "x": -9,
+                  "y": 15
+                },
+                {
+                  "id": "p09",
+                  "x": -15,
+                  "y": 15
+                },
+                {
+                  "id": "p10",
+                  "x": 21,
+                  "y": 9
+                },
+                {
+                  "id": "p11",
+                  "x": 15,
+                  "y": 9
+                },
+                {
+                  "id": "p12",
+                  "x": 9,
+                  "y": 9
+                },
+                {
+                  "id": "p13",
+                  "x": 3,
+                  "y": 9
+                },
+                {
+                  "id": "p14",
+                  "x": -3,
+                  "y": 9
+                },
+                {
+                  "id": "p15",
+                  "x": -9,
+                  "y": 9
+                },
+                {
+                  "id": "p16",
+                  "x": -15,
+                  "y": 9
+                },
+                {
+                  "id": "p17",
+                  "x": -21,
+                  "y": 9
+                },
+                {
+                  "id": "p18",
+                  "x": 21,
+                  "y": 3
+                },
+                {
+                  "id": "p19",
+                  "x": 15,
+                  "y": 3
+                },
+                {
+                  "id": "p20",
+                  "x": 9,
+                  "y": 3
+                },
+                {
+                  "id": "p21",
+                  "x": 3,
+                  "y": 3
+                },
+                {
+                  "id": "p22",
+                  "x": -3,
+                  "y": 3
+                },
+                {
+                  "id": "p23",
+                  "x": -9,
+                  "y": 3
+                },
+                {
+                  "id": "p24",
+                  "x": -15,
+                  "y": 3
+                },
+                {
+                  "id": "p25",
+                  "x": -21,
+                  "y": 3
+                },
+                {
+                  "id": "p26",
+                  "x": -27,
+                  "y": 3
+                },
+                {
+                  "id": "p27",
+                  "x": 21,
+                  "y": -3
+                },
+                {
+                  "id": "p28",
+                  "x": 15,
+                  "y": -3
+                },
+                {
+                  "id": "p29",
+                  "x": 9,
+                  "y": -3
+                },
+                {
+                  "id": "p30",
+                  "x": 3,
+                  "y": -3
+                },
+                {
+                  "id": "p31",
+                  "x": -3,
+                  "y": -3
+                },
+                {
+                  "id": "p32",
+                  "x": -9,
+                  "y": -3
+                },
+                {
+                  "id": "p33",
+                  "x": -15,
+                  "y": -3
+                },
+                {
+                  "id": "p34",
+                  "x": -21,
+                  "y": -3
+                },
+                {
+                  "id": "p35",
+                  "x": -27,
+                  "y": -3
+                },
+                {
+                  "id": "p36",
+                  "x": 21,
+                  "y": -9
+                },
+                {
+                  "id": "p37",
+                  "x": 15,
+                  "y": -9
+                },
+                {
+                  "id": "p38",
+                  "x": 9,
+                  "y": -9
+                },
+                {
+                  "id": "p39",
+                  "x": 3,
+                  "y": -9
+                },
+                {
+                  "id": "p40",
+                  "x": -3,
+                  "y": -9
+                },
+                {
+                  "id": "p41",
+                  "x": -9,
+                  "y": -9
+                },
+                {
+                  "id": "p42",
+                  "x": -15,
+                  "y": -9
+                },
+                {
+                  "id": "p43",
+                  "x": -21,
+                  "y": -9
+                },
+                {
+                  "id": "p44",
+                  "x": 15,
+                  "y": -15
+                },
+                {
+                  "id": "p45",
+                  "x": 9,
+                  "y": -15
+                },
+                {
+                  "id": "p46",
+                  "x": 3,
+                  "y": -15
+                },
+                {
+                  "id": "p47",
+                  "x": -3,
+                  "y": -15
+                },
+                {
+                  "id": "p48",
+                  "x": -9,
+                  "y": -15
+                },
+                {
+                  "id": "p49",
+                  "x": -15,
+                  "y": -15
+                },
+                {
+                  "id": "p50",
+                  "x": 9,
+                  "y": -21
+                },
+                {
+                  "id": "p51",
+                  "x": 3,
+                  "y": -21
+                },
+                {
+                  "id": "p52",
+                  "x": -3,
+                  "y": -21
+                },
+                {
+                  "id": "p53",
+                  "x": -9,
+                  "y": -21
+                }
+              ]
+            },
+            "points": [
+              {
+                "id": "p00",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p01",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p02",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p03",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p04",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p05",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p06",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p07",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p08",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p09",
+                "threshold": {
+                  "state": "not-extracted"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p10",
+                "threshold": {
+                  "value": 0,
+                  "unit": "dB",
+                  "censored": true
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p11",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p12",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p13",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p14",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p15",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p16",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p17",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p18",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p19",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p20",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p21",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p22",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p23",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p24",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p25",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p26",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p27",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p28",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p29",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p30",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p31",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p32",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p33",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p34",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p35",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p36",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p37",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p38",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p39",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p40",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p41",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p42",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p43",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p44",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p45",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p46",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p47",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p48",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p49",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p50",
+                "threshold": {
+                  "value": 26,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p51",
+                "threshold": {
+                  "value": 25,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p52",
+                "threshold": {
+                  "value": 28,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              },
+              {
+                "id": "p53",
+                "threshold": {
+                  "value": 27,
+                  "unit": "dB"
+                },
+                "stimulusResult": {
+                  "state": "not-present-in-source"
+                }
+              }
+            ],
+            "foveaThreshold": {
+              "state": "not-present-in-source"
+            },
+            "blindSpot": {
+              "state": "not-present-in-source"
+            },
+            "reliability": {
+              "fl": {
+                "state": "not-present-in-source"
+              },
+              "fp": {
+                "state": "not-present-in-source"
+              },
+              "fn": {
+                "state": "not-present-in-source"
+              },
+              "message": {
+                "state": "not-present-in-source"
+              }
+            },
+            "gaze": {
+              "state": "not-present-in-source"
+            }
+          },
+          "analyses": [
+            {
+              "origin": "printed",
+              "engineVersion": "",
+              "values": {
+                "md": {
+                  "value": -2.25,
+                  "unit": "dB"
+                },
+                "psd": {
+                  "value": 2.1,
+                  "unit": "dB"
+                },
+                "vfi": {
+                  "value": 96,
+                  "unit": "%"
+                },
+                "ght": {
+                  "state": "not-present-in-source"
+                },
+                "mdHemifield": {
+                  "state": "not-present-in-source"
+                },
+                "sf": {
+                  "state": "not-present-in-source"
+                },
+                "cpsd": {
+                  "state": "not-present-in-source"
+                },
+                "points": [
+                  {
+                    "id": "p00",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p01",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p02",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p03",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p04",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p05",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p06",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p07",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p08",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p09",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p10",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p11",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p12",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p13",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p14",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p15",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p16",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p17",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p18",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p19",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p20",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p21",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p22",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p23",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p24",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p25",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p26",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p27",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p28",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p29",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p30",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p31",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p32",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p33",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p34",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p35",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p36",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p37",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p38",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p39",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p40",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p41",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p42",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p43",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p44",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p45",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p46",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p47",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p48",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p49",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p50",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p51",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p52",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  },
+                  {
+                    "id": "p53",
+                    "totalDeviation": {
+                      "value": -2,
+                      "unit": "dB"
+                    },
+                    "patternDeviation": {
+                      "state": "not-present-in-source"
+                    },
+                    "totalDeviationProbability": {
+                      "state": "not-present-in-source"
+                    },
+                    "patternDeviationProbability": {
+                      "state": "not-present-in-source"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "extraction": {
+            "protocol": null,
+            "contentSha256": "dcec5a1acc2313da7e9144cc94f37d508a7735d12adb03424f9ce58a4c3204aa",
+            "page": 0,
+            "index": 1,
+            "points": []
+          },
+          "review": {
+            "state": "awaiting-review",
+            "at": "",
+            "by": ""
+          },
+          "seams": {
+            "artifacts": [],
+            "findings": [],
+            "overlays": []
+          }
+        }
+      ]
+    }
+  ],
+  "computedAnalyses": []
+}

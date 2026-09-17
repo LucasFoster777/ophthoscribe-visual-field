@@ -1,0 +1,1717 @@
+{
+  "schema": "visual-field-source/v1",
+  "study": {
+    "testDate": "2026-01-10",
+    "pattern": "24-2",
+    "eyes": [
+      "OD",
+      "OS"
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "device": {},
+    "exportFormat": "other",
+    "capturedAt": null,
+    "qualityControl": {
+      "falsePositivesMax": 0.15,
+      "attestedBy": "Synthetic example; an attestation, not a reliability measurement"
+    }
+  },
+  "eyes": [
+    {
+      "eye": "OD",
+      "ageYears": 55,
+      "testParameters": {},
+      "durationSeconds": null,
+      "reliability": {
+        "fp": {
+          "value": null,
+          "state": "not-read"
+        },
+        "fn": {
+          "value": null,
+          "state": "not-read"
+        },
+        "fl": {
+          "value": null,
+          "state": "not-read"
+        }
+      },
+      "printout": {
+        "md": {
+          "value": -2.25,
+          "state": "read"
+        },
+        "psd": {
+          "value": 2.1,
+          "state": "read"
+        },
+        "vfi": {
+          "value": 96,
+          "state": "read"
+        }
+      },
+      "points": [
+        {
+          "id": "p00",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p01",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p02",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p03",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p04",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p05",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p06",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p07",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p08",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p09",
+          "threshold": {
+            "value": null,
+            "state": "not-read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p10",
+          "threshold": {
+            "value": 0,
+            "state": "read",
+            "censored": true
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p11",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p12",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p13",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p14",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p15",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p16",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p17",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p18",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p19",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p20",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p21",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p22",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p23",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p24",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p25",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p26",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p27",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p28",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p29",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p30",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p31",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p32",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p33",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p34",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p35",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p36",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p37",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p38",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p39",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p40",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p41",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p42",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p43",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p44",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p45",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p46",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p47",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p48",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p49",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p50",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p51",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p52",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p53",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        }
+      ]
+    },
+    {
+      "eye": "OS",
+      "ageYears": 55,
+      "testParameters": {},
+      "durationSeconds": null,
+      "reliability": {
+        "fp": {
+          "value": null,
+          "state": "not-read"
+        },
+        "fn": {
+          "value": null,
+          "state": "not-read"
+        },
+        "fl": {
+          "value": null,
+          "state": "not-read"
+        }
+      },
+      "printout": {
+        "md": {
+          "value": -2.25,
+          "state": "read"
+        },
+        "psd": {
+          "value": 2.1,
+          "state": "read"
+        },
+        "vfi": {
+          "value": 96,
+          "state": "read"
+        }
+      },
+      "points": [
+        {
+          "id": "p00",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p01",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p02",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p03",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p04",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p05",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p06",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p07",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p08",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p09",
+          "threshold": {
+            "value": null,
+            "state": "not-read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p10",
+          "threshold": {
+            "value": 0,
+            "state": "read",
+            "censored": true
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p11",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p12",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p13",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p14",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p15",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p16",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p17",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p18",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p19",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p20",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p21",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p22",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p23",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p24",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p25",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p26",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p27",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p28",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p29",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p30",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p31",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p32",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p33",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p34",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p35",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p36",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p37",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p38",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p39",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p40",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p41",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p42",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p43",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p44",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p45",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p46",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p47",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p48",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p49",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p50",
+          "threshold": {
+            "value": 26.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p51",
+          "threshold": {
+            "value": 25.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p52",
+          "threshold": {
+            "value": 28.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        },
+        {
+          "id": "p53",
+          "threshold": {
+            "value": 27.125,
+            "state": "read"
+          },
+          "totalDeviation": {
+            "value": -2,
+            "state": "read"
+          },
+          "patternDeviation": {
+            "value": null,
+            "state": "not-read"
+          }
+        }
+      ]
+    }
+  ]
+}

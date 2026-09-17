@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "path": "/examples/source-bilateral.json",
+      "context": {
+        "subject": "synthetic-A"
+      }
+    },
+    {
+      "path": "/examples/matrix-od.json"
+    },
+    {
+      "path": "/examples/thresholds.csv"
+    },
+    {
+      "path": "/examples/legacy-session.json"
+    },
+    {
+      "path": "/tests/e2e/fixtures/visual-field/sources/zeiss_multi/hvf_7724798.pdf",
+      "context": {
+        "subject": "synthetic-zeiss"
+      }
+    },
+    {
+      "path": "/tests/e2e/fixtures/visual-field/sources/zeiss_multi/hvf_7724801.pdf",
+      "context": {
+        "subject": "synthetic-zeiss"
+      }
+    }
+  ]
+}

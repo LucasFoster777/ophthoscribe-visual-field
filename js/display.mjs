@@ -31,10 +31,11 @@ function map(eye, view, fallbackLayout) {
   eye.points.forEach((point, index) => {
     const cell = el('span', 'vf-point', displayValue(eye, index, view));
     cell.dataset.pointId = point.id;
-    const origin = view === 'threshold' ? 'printed' : view === 'bayesian' ? 'computed' : reportDoors.originOf(eye, index, view);
+    const origin = view === 'threshold' ? (eye.measurementOrigin || 'printed') : view === 'bayesian' ? 'computed' : reportDoors.originOf(eye, index, view);
     reportDoors.ink(cell, origin);
     cell.title = `${point.id} · ${origin === 'computed' ? 'calculated' : 'extracted'} · ${cell.textContent || 'no numeric value in this layer'}`;
     reportDoors.markTier(cell, eye, index, view);
+    if (eye.measurementOrigin === 'source-supplied') { cell.title = cell.title.replace('printed', 'supplied'); if (cell.hasAttribute('aria-label')) cell.setAttribute('aria-label', cell.getAttribute('aria-label').replace('printed', 'supplied')); }
     cell.style.gridColumn = String(layout.columnOf[index]);
     cell.style.gridRow = String(layout.rowOf[index]);
     grid.append(cell);
@@ -47,41 +48,74 @@ function printedText(eye, key) {
   if (key === 'fl') return `${metric.numerator}/${metric.denominator}`;
   return String(metric.value) + (['vfi','fp','fn'].includes(key) ? '%' : '');
 }
-function summary(parent, eye) {
+function summary(parent, eye, isDevice = true) {
   const strip = el('div', 'vf-summary');
   for (const [key, label] of Object.entries({md:'MD',psd:'PSD',vfi:'VFI',fp:'FP',fn:'FN',fl:'FL'})) {
     const calculated = ['md','psd','vfi'].includes(key);
+    if (!isDevice && !calculated) continue;
     const origin = calculated ? reportDoors.originOf(eye, key) : 'printed';
     const value = eye.conventional[key];
     const text = calculated ? (!Number.isFinite(value) ? eye.absence : key === 'vfi' ? Math.round(value)+'%' : (key === 'md' && value > 0 ? '+' : '')+value.toFixed(1)+' dB') : printedText(eye,key);
     const item = el('span', 'vf-summary-item');
     item.append(el('strong','',label),reportDoors.ink(el('span','',text),origin));
-    if (calculated && eye.door === 'dev' && origin === 'computed') item.append(el('small','vf-summary-secondary','device '+printedText(eye,key)));
+    if (isDevice && calculated && eye.door === 'dev' && origin === 'computed') item.append(el('small','vf-summary-secondary','device '+printedText(eye,key)));
     if (!calculated) item.append(el('small','vf-summary-secondary','device reliability'));
     strip.append(item);
   }
   parent.append(strip);
   if (eye.ght) parent.append(el('p','vf-device-ght','Device GHT · '+eye.ght));
 }
-export function renderReport(host, {test, door = 'view', blockIndex, directories, grayscale}) {
+export function renderReport(host, {test, door = 'view', blockIndex, directories, grayscale, examination, source}) {
   host.replaceChildren();
+  const isDevice = !examination || examination.analyses.some(block => block.origin === 'device-reported');
   const eye = doorApi.eyeReportFrom(test, door, {blockIndex});
+  eye.measurementOrigin = isDevice ? 'printed' : 'source-supplied';
   const section = el('section','vf-demo-report');
   section.dataset.door = door;
-  section.append(el('h2','',`${door === 'dev' ? 'Dev View' : 'Zeiss View'} · ${eye.eye} · ${test.acquisition.testDate} · ${test.testDefinition.pattern}`));
-  section.append(el('p','vf-view-origin',door === 'dev' ? 'Calculated analysis over extracted thresholds. Device results remain separate.' : 'Device results extracted from the original report. Missing values remain missing.'));
+  section.append(el('h2','',`${door === 'dev' ? 'Dev View' : isDevice ? 'Zeiss View' : 'Normal View'} · ${eye.eye} · ${test.acquisition.testDate} · ${test.testDefinition.pattern}`));
+  section.append(el('p','vf-view-origin',door === 'dev' ? 'Calculated analysis over normalized thresholds. Source results remain separate.' : isDevice ? 'Device results extracted from the original report. Missing values remain missing.' : 'Source-supplied measurements and analysis. These are not device-reported results.'));
   if (door === 'dev') section.append(el('p','vf-engine',eye.hasComputed ? `Engine ${eye.engine} · Dataset ${eye.dataset} · ${eye.block.computedAt}` : 'No calculated analysis for this examination.'));
-  summary(section,eye);
+  if (door === 'dev' || isDevice) summary(section,eye,isDevice);
+  if (!isDevice && door === 'view') {
+    section.append(map(eye, 'threshold', eye.layout));
+    for (const block of examination.analyses.filter(b => b.origin !== 'computed')) {
+      const points = block.points || block.values?.points || block.legacyBlock?.values?.points || [];
+      const value = (point, key) => point?.[key]?.value ?? null;
+      const supplied = { ...eye, origins: { values: points.map(() => 'source-supplied'), patternValues: points.map(() => 'source-supplied') }, mapStates: {}, conventional: {
+        values: points.map(p => value(p, 'totalDeviation')), patternValues: points.map(p => value(p, 'patternDeviation')),
+        probabilities: points.map(p => value(p, 'totalDeviationProbability')), patternProbabilities: points.map(p => value(p, 'patternDeviationProbability'))
+      } };
+      section.append(el('h3', '', `${block.origin} · ${block.id}`));
+      const globals = block.globals || block.values || block.legacyBlock?.values || {};
+      const metrics = el('div', 'vf-summary');
+      for (const key of ['md','psd','vfi']) { const cell = globals[key], item = el('span', 'vf-summary-item'); item.append(el('strong', '', key.toUpperCase()), el('span', '', cell?.value == null ? cell?.state || 'Not supplied' : `${cell.value} ${cell.unit || ''}`), el('small', '', block.origin)); metrics.append(item); }
+      section.append(metrics);
+      if (points.length) { const maps = el('div', 'vf-eye-maps'); for (const [kind, label] of [['td','Source-supplied total deviation / significance'],['pd','Source-supplied pattern deviation / significance']]) { const panel = el('div', ''); panel.append(el('h3','',label), map(supplied, kind, eye.layout)); maps.append(panel); } section.append(maps); }
+      section.append(el('pre', 'canonical-json', JSON.stringify({ globals: block.globals || block.values, provenance: block.provenance }, null, 2)));
+    }
+    host.append(section); return () => {};
+  }
   let objectUrl;
   const hooks = {el, map:(report,view)=>map(report,view,eye.layout), grayscale:(target)=>{
     if (door === 'dev' && grayscale) {
       objectUrl = URL.createObjectURL(grayscale);
       const img = el('img','vf-grayscale'); img.src=objectUrl; img.alt='Calculated grayscale from extracted thresholds';
       target.append(img,el('small','vf-summary-secondary','Calculated from thresholds'));
-    } else target.append(el('p','vf-map-source-note',door === 'view' ? 'Original grayscale is available in the PDF.' : 'Calculated grayscale unavailable.'));
+    } else target.append(el('p','vf-map-source-note',door === 'view' ? source?.format?.includes('pdf') || source?.format === 'zeiss-pdf' ? 'Original grayscale is available in the PDF.' : 'Original grayscale is not supplied.' : 'Calculated grayscale unavailable.'));
   }};
   section.append(reportDoors.eyeMaps({door, package:{record:test}}, eye, hooks));
-  section.append(reportDoors.recordAttributes(test,el),reportDoors.provenanceLegend(eye,el));
+  section.append(reportDoors.recordAttributes(test,el));
+  if (isDevice) section.append(reportDoors.provenanceLegend(eye,el));
+  else section.append(el('p', 'vf-view-origin', 'Computed results are independent of source-supplied values.'));
+  if (door === 'dev' && examination) {
+    const blocks = examination.analyses.filter(block => block.origin === 'computed');
+    const block = blocks[blockIndex] || blocks.at(-1);
+    if (block) {
+      const details = el('details', '');
+      details.append(el('summary', '', `Calculation provenance and assumptions · ${block.id}`), el('pre', '', JSON.stringify(block.provenance, null, 2)));
+      section.append(details);
+    }
+  }
   host.append(section);
   return ()=>{if(objectUrl) URL.revokeObjectURL(objectUrl);};
 }
